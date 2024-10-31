@@ -13,12 +13,11 @@ export default function Header() {
   const pathname = usePathname();
   // console.log(pathname);
 
-  // If Everything else
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         {pathname != "/" && (
-          <TransitionBack className={styles.back} href="">
+          <TransitionBack className={styles.back} href="/">
             <Icon.Arrow />
           </TransitionBack>
         )}
