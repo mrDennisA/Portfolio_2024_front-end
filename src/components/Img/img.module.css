@@ -1,0 +1,46 @@
+.container {
+  display: grid;
+  padding: var(--divider) var(--padding);
+  gap: var(--divider);
+}
+
+.container img {
+  max-width: 100%;
+}
+
+.container,
+.list,
+.grid {
+  width: 100%;
+  margin: 0 auto;
+  max-width: var(--xl);
+}
+
+.list,
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+}
+.list img,
+.grid img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid .parallax:last-child {
+  grid-column: 1 / -1;
+}
+
+.parallax {
+  display: flex;
+}
+
+@media only screen and (min-width: 576px) {
+  .grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

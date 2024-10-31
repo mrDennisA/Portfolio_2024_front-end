@@ -1,0 +1,56 @@
+{
+  "color": "#FFFFFF",
+  "colorBG": "#1C1B20",
+  "title": "Portfolio",
+  "client": "Graphics / UX / Web",
+  "imgBanner": [
+    { "url": "/img/banner_home_back.jpg", "blurUrl": "/img/banner_home_back_blur.jpg", "alt": "Banner Background" },
+    { "url": "/img/banner_home_front.png", "blurUrl": "/img/banner_home_front_blur.png", "alt": "Banner Foreground" }
+  ],
+  "detail": {
+    "title": "Hello!",
+    "description": [
+      "My name is Dennis Alekseev, i am a 3D and Graphic designer with 20 years of experience in the field.",
+      "I have held several different roles in a variety of environments, designing for a wide range of mediums including web and UX design, 3D visualization, product design, print, photography, animation, advertising, social media, and digital marketing."
+    ]
+  },
+  "contact": {
+    "description": "Want to reach out about a project, collobration or just want to say friendly hello?",
+    "links": [
+      {
+        "title": "Email",
+        "url": "mailto: dennis.alekseev@gmail.com"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/dennis-alekseev/"
+      }
+    ]
+  },
+  "expertise": {
+    "title": "Expertise",
+    "list": [
+      ["HTML", "CSS", "JavaScript", "WordPress", "ReactJS", "NextJS", "Strapi"],
+      ["Photoshop", "Illustrator", "InDesign", "After Effects", "Figma", "Adobe XD", "Premiere Pro", "Lightroom"],
+      ["3DSMax", "Vray", "Corona Render", "Revit", "Unreal Engine"]
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "list": [
+      { "fromDate": "2003", "toDate": "2004", "title": "Freelance", "description": "Graphic Designer" },
+      { "fromDate": "2004", "toDate": "2008", "title": "YoungFehn", "description": "3D Production Manager" },
+      { "fromDate": "2008", "toDate": "2009", "title": "NIELSTORP+ Architects", "description": "Senior 3D Designer" },
+      { "fromDate": "2009", "toDate": "2020", "title": "Lund Hagem Architects", "description": "3D Production Manager" },
+      { "fromDate": "2021", "toDate": "Now", "title": "IC Scandinavia", "description": "Senior Graphic Designer" }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "list": [
+      { "fromDate": "2001", "toDate": "2002", "title": "Noroff School of Technology", "description": "Multimedia Design" },
+      { "fromDate": "2002", "toDate": "2003", "title": "Noroff School of Technology", "description": "3D Design and Animation" },
+      { "fromDate": "2020", "toDate": "2022", "title": "Noroff School of Technology", "description": "Front-end Development" }
+    ]
+  }
+}

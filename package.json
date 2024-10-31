@@ -1,0 +1,18 @@
+{
+  "name": "front-end",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "framer-motion": "^11.11.10",
+    "lenis": "^1.1.14",
+    "next": "14.2.16",
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}

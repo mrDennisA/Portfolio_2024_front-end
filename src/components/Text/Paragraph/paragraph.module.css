@@ -1,0 +1,22 @@
+.container {
+  display: grid;
+  gap: var(--gap);
+
+  /* padding-bottom: var(--divider); */
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.word {
+  position: relative;
+  padding-right: clamp(0.313rem, 0.104rem + 0.694vw, 0.625rem);
+}
+
+.shadow {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.2);
+}

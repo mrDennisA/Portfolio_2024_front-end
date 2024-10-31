@@ -1,0 +1,80 @@
+.section {
+  display: grid;
+  padding: var(--divider) var(--paddingLG);
+  gap: var(--divider);
+
+  width: 100%;
+  margin: 0 auto;
+  max-width: var(--xl);
+}
+
+/* Title */
+.title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.word {
+  position: relative;
+  padding-right: clamp(0.313rem, 0.104rem + 0.694vw, 0.625rem);
+}
+
+.word .shadow,
+.link .shadow {
+  position: absolute;
+  color: var(--borderColor);
+}
+
+/* Link */
+.contactLink {
+  display: flex;
+  justify-content: center;
+  gap: var(--paddingLG);
+}
+
+.link {
+  position: relative;
+  display: flex;
+}
+
+.link .shadow,
+.link .span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: clamp(3rem, 2.7rem + 1vw, 3.5rem);
+  width: clamp(7.5rem, 4.8rem + 9vw, 12rem);
+
+  letter-spacing: 0px;
+
+  border-radius: clamp(1.5rem, 1.35rem + 0.5vw, 1.75rem);
+
+  transition-property: opacity, letter-spacing, color, background-color;
+  transition-duration: 0.4s;
+}
+
+.link .shadow {
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: var(--border);
+  /* box-shadow: 0 0 0 1px var(--borderColor) inset; */
+}
+
+.link .span {
+  position: relative;
+  border: var(--borderHover);
+  /* box-shadow: 0 0 0 1px var(--borderColorHover) inset; */
+}
+
+.link:hover .shadow,
+.link:hover .span {
+  letter-spacing: 2px;
+  color: var(--textColorDark);
+  background-color: var(--textColorLight);
+
+  transition-property: opacity, letter-spacing, color, background-color;
+  transition-duration: 0.4s;
+}

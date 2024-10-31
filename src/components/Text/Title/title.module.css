@@ -1,0 +1,21 @@
+.title {
+  position: relative;
+  padding: 0 var(--padding);
+}
+
+.title * {
+  text-shadow: var(--shadow);
+}
+
+.words {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.client {
+  font-family: var(--fontCondensed);
+  font-style: italic;
+  font-weight: 200;
+  font-size: clamp(1.5rem, 0.8333rem + 2.2222vw, 2.5rem);
+}

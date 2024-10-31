@@ -1,0 +1,15 @@
+.svg {
+  height: 2rem;
+}
+
+.svg rect,
+.svg path {
+  fill: var(--textColorLight);
+}
+
+.arrow {
+  fill: none;
+  stroke: var(--textColorLight);
+  stroke-miterlimit: 10;
+  stroke-width: 1.5px;
+}

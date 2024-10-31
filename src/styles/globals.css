@@ -1,0 +1,122 @@
+@import "./common/typography.css";
+
+:root {
+  --textColorLight: rgb(255, 255, 255);
+  --textColorDark: rgb(0, 0, 0);
+
+  --bgColorLight: rgb(224, 224, 228);
+  /* --bgColorDark: rgb(28, 27, 32); */
+  --bgColorDark: #1c1b20;
+
+  --buttonColor: rgb(28, 27, 32, 0.4);
+  --buttonColorHover: rgba(28, 27, 32, 0.3);
+
+  --borderColor: rgba(255, 255, 255, 0.2);
+  --borderColorHover: rgba(255, 255, 255, 1);
+
+  --xs: 480px;
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1280px;
+
+  --border: solid 1px var(--borderColor);
+  --borderHover: solid 1px var(--borderColorHover);
+
+  --shadow: 2px 2px 4px var(--buttonColor);
+
+  --radius: 4px;
+
+  --padding: clamp(1.5rem, -1.2rem + 9vw, 6rem);
+  --paddingLG: clamp(1.5rem, -3.5rem + 16.667vw, 9rem);
+  --divider: clamp(3rem, 1rem + 6.667vw, 6rem);
+  --gap: 1.5rem;
+
+  --transition: 0.15s ease;
+}
+
+@media only screen and (min-width: 768px) {
+  /* :root {
+    --padding: clamp(3rem, -2.3333rem + 11.1111vw, 6rem);
+  } */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  border: unset;
+  outline: unset;
+  background: unset;
+}
+
+body {
+  color: var(--textColorLight);
+  background-color: var(--bgColorDark);
+  /* background-color: #464d4f; */
+}
+
+.wrapper {
+  /* display: grid;
+  grid-template-rows: 1fr auto; */
+
+  /* width: 100%;
+  margin: 0 auto;
+  max-width: var(--xl); */
+
+  /* min-height: 100vh; */
+}
+
+a,
+button {
+  color: var(--textColorLight);
+  cursor: pointer;
+}
+
+.themeLight {
+  background-color: var(--bgColorLight);
+  color: var(--textColorDark);
+}
+
+/* TransitionLink */
+body {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition-duration: 150ms;
+}
+
+.page-transition {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+  /* background: var(--bgColorDark); */
+  /* transform: translateY(40px); */
+  /* filter: blur(12px); */
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* * {
+  box-shadow: 0px 0px 0px 1px hsla(180, 100%, 20%, 0.5) inset;
+} */
