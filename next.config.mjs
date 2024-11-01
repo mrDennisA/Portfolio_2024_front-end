@@ -4,10 +4,6 @@ import withPlaiceholder from "@plaiceholder/next";
 const nextConfig = {
   images: {
     remotePatterns: [
-      // {
-      //   hostname: "localhost",
-      //   port: "3000",
-      // },
       {
         protocol: "https",
         hostname: "www.dalekseev.dev",
