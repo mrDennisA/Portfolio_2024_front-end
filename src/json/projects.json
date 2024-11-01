@@ -9,13 +9,11 @@
     "client": "Community Science Museum",
     "imgCard": {
       "url": "/img/school/csm/banner_card.jpg",
-      "blurUrl": "/img/school/csm/banner_card_blur.jpg",
       "alt": "imgCard"
     },
     "imgBanner": [
       {
         "url": "/img/school/csm/banner.jpg",
-        "blurUrl": "/img/school/csm/banner_blur.jpg",
         "alt": "imgBanner"
       }
     ],
@@ -64,13 +62,11 @@
     "client": "Rainydays",
     "imgCard": {
       "url": "/img/school/rainydays/banner_card.jpg",
-      "blurUrl": "/img/school/rainydays/banner_card_blur.jpg",
       "alt": "imgCard"
     },
     "imgBanner": [
       {
         "url": "/img/school/rainydays/banner.jpg",
-        "blurUrl": "/img/school/rainydays/banner_blur.jpg",
         "alt": "imgBanner"
       }
     ],
@@ -123,13 +119,11 @@
     "client": "Blog Site",
     "imgCard": {
       "url": "/img/school/blog_site/banner_card.jpg",
-      "blurUrl": "/img/school/blog_site/banner_card_blur.jpg",
       "alt": "imgCard"
     },
     "imgBanner": [
       {
         "url": "/img/school/blog_site/banner.jpg",
-        "blurUrl": "/img/school/blog_site/banner_blur.jpg",
         "alt": "imgBanner"
       }
     ],
@@ -182,13 +176,11 @@
     "client": "Home Decor",
     "imgCard": {
       "url": "/img/school/home_decor/banner_card.jpg",
-      "blurUrl": "/img/school/home_decor/banner_card_blur.jpg",
       "alt": "imgCard"
     },
     "imgBanner": [
       {
         "url": "/img/school/home_decor/banner.jpg",
-        "blurUrl": "/img/school/home_decor/banner_blur.jpg",
         "alt": "imgBanner"
       }
     ],
@@ -253,13 +245,11 @@
     "client": "VOKE",
     "imgCard": {
       "url": "/img/school/voke/banner_card.jpg",
-      "blurUrl": "/img/school/voke/banner_card_blur.jpg",
       "alt": "imgCard"
     },
     "imgBanner": [
       {
         "url": "/img/school/voke/banner.jpg",
-        "blurUrl": "/img/school/voke/banner_blur.jpg",
         "alt": "imgBanner"
       }
     ],
@@ -328,13 +318,11 @@
     "client": "ROAM",
     "imgCard": {
       "url": "/img/client/roam/christmas_gift_box/banner_card.jpg",
-      "blurUrl": "/img/client/roam/christmas_gift_box/banner_card_blur.jpg",
       "alt": "imgCard"
     },
     "imgBanner": [
       {
         "url": "/img/client/roam/christmas_gift_box/banner.jpg",
-        "blurUrl": "/img/client/roam/christmas_gift_box/banner_blur.jpg",
         "alt": "imgBanner"
       }
     ],
@@ -353,7 +341,6 @@
         "img": [
           {
             "url": "/img/client/roam/christmas_gift_box/img_01.jpg",
-            "blurUrl": "/img/client/roam/christmas_gift_box/banner_blur.jpg",
             "alt": "img1"
           }
         ]
@@ -384,13 +371,11 @@
     "client": "Eleni + Chris",
     "imgCard": {
       "url": "/img/client/elenichris/christmas_giftset/banner_card.jpg",
-      "blurUrl": "/img/client/elenichris/christmas_giftset/banner_card_blur.jpg",
       "alt": "imgCard"
     },
     "imgBanner": [
       {
         "url": "/img/client/elenichris/christmas_giftset/banner.jpg",
-        "blurUrl": "/img/client/elenichris/christmas_giftset/banner_blur.jpg",
         "alt": "imgBanner"
       }
     ],
@@ -444,13 +429,11 @@
     "client": "Eleni + Chris",
     "imgCard": {
       "url": "/img/client/elenichris/sea_salt_spray/banner_card.jpg",
-      "blurUrl": "/img/client/elenichris/sea_salt_spray/banner_card_blur.jpg",
       "alt": "imgCard"
     },
     "imgBanner": [
       {
         "url": "/img/client/elenichris/sea_salt_spray/banner.jpg",
-        "blurUrl": "/img/client/elenichris/sea_salt_spray/banner_blur.jpg",
         "alt": "imgBanner"
       }
     ],
@@ -504,13 +487,11 @@
     "client": "Eleni + Chris",
     "imgCard": {
       "url": "/img/client/elenichris/skincare/banner_card.jpg",
-      "blurUrl": "/img/client/elenichris/skincare/banner_card_blur.jpg",
       "alt": "imgCard"
     },
     "imgBanner": [
       {
         "url": "/img/client/elenichris/skincare/banner.jpg",
-        "blurUrl": "/img/client/elenichris/skincare/banner_blur.jpg",
         "alt": "imgBanner"
       }
     ],

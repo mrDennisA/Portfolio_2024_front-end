@@ -1,14 +1,14 @@
-.container {
+.single {
   display: grid;
   padding: var(--divider) var(--padding);
   gap: var(--divider);
 }
 
-.container img {
+.single img {
   max-width: 100%;
 }
 
-.container,
+.single,
 .list,
 .grid {
   width: 100%;

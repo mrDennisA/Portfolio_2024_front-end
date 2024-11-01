@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Parallax({ children, type = null, styles }) {
@@ -28,24 +28,4 @@ export default function Parallax({ children, type = null, styles }) {
       </motion.div>
     );
   }
-}
-
-export function ParallaxCard({ children, styles }) {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-
-  useEffect(() => {
-    console.log(ref.current);
-  }, []);
-
-  const backgroundYProgress = useTransform(scrollYProgress, [0, 1], ["0", "100%"]);
-
-  return (
-    <motion.div ref={ref} className={styles} style={{ x: backgroundYProgress }}>
-      {children}
-    </motion.div>
-  );
 }

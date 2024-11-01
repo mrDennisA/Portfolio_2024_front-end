@@ -1,9 +1,15 @@
 import Image from "next/image";
 
+//Components
+import { TransitionLink } from "@/components/TransitionLink/page";
+import { ParallaxCard } from "@/components/FramerMotion/Parallax/page";
+import DynamicImage from "@/components/DynamicImage/page";
+
+//URL
+import { BASE_URL } from "@/constants/api";
+
 // Styles
 import styles from "./card.module.css";
-import { TransitionLink } from "@/utils/TransitionLink";
-import { ParallaxCard } from "@/components/FramerMotion/Parallax/page";
 
 // Render
 export default function Card({ data }) {
@@ -12,19 +18,9 @@ export default function Card({ data }) {
   return (
     <div className={styles.container}>
       <TransitionLink href={"/project/" + slug}>
-        <ParallaxCard styles={styles.img}>
-          <Image
-            src={data.imgCard.url}
-            blurDataURL={data.imgCard.blurUrl}
-            alt={data.imgCard.alt}
-            priority
-            placeholder="blur"
-            quality={100}
-            width={1080}
-            height={1080}
-            style={{ width: "100%", height: "auto", objectFit: "cover" }}
-          />
-        </ParallaxCard>
+        <div className={styles.img}>
+          <DynamicImage url={BASE_URL + data.imgCard.url} alt={data.imgCard.alt} />
+        </div>
 
         {/* <div className={styles.description}>
             <div className={styles.client}>{data.client}</div>

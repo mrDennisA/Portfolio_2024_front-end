@@ -4,8 +4,8 @@
   "title": "Portfolio",
   "client": "Graphics / UX / Web",
   "imgBanner": [
-    { "url": "/img/banner_home_back.jpg", "blurUrl": "/img/banner_home_back_blur.jpg", "alt": "Banner Background" },
-    { "url": "/img/banner_home_front.png", "blurUrl": "/img/banner_home_front_blur.png", "alt": "Banner Foreground" }
+    { "url": "/img/banner_home_back.jpg", "alt": "Banner Background" },
+    { "url": "/img/banner_home_front.png", "alt": "Banner Foreground" }
   ],
   "detail": {
     "title": "Hello!",

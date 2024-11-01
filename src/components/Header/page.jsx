@@ -7,7 +7,7 @@ import styles from "./header.module.css";
 
 //Components
 import * as Icon from "@/components/Icons/page";
-import { TransitionBack } from "@/utils/TransitionLink";
+import { TransitionBack } from "@/components/TransitionLink/page";
 
 export default function Header() {
   const pathname = usePathname();
