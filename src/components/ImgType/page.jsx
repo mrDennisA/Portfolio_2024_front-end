@@ -12,41 +12,23 @@ import styles from "./img.module.css";
 
 //Render
 export default function ImgType({ data }) {
-  const ImgProp = ({ src, alt }) => {
-    return (
-      <ScrollinView styles={styles.parallax}>
-        <DynamicImage url={BASE_URL + src} alt={alt} />
-      </ScrollinView>
-    );
-  };
-
-  if (data.type === "single") {
-    return (
-      <section className={styles.single}>
-        {data.img.map((item, index) => (
-          <ImgProp key={index} src={item.url} alt={item.alt} />
-        ))}
-      </section>
-    );
-  }
-
-  if (data.type === "list") {
-    return (
-      <section className={styles.list}>
-        {data.img.map((item, index) => (
-          <ImgProp key={index} src={item.url} alt={item.alt} />
-        ))}
-      </section>
-    );
-  }
-
-  if (data.type === "grid") {
-    return (
-      <section className={styles.grid}>
-        {data.img.map((item, index) => (
-          <ImgProp key={index} src={item.url} alt={item.alt} />
-        ))}
-      </section>
-    );
-  }
+  return (
+    <section className={styles[data.type]}>
+      {data.img.map((item, index) => (
+        <ScrollinView key={index} styles={styles.parallax}>
+          <Image
+            src={BASE_URL + item.url}
+            alt={item.alt}
+            priority
+            quality={100}
+            width={1280}
+            height={1280}
+            sizes="(max-width: 1280px)100vw"
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          />
+          {/* <DynamicImage url={BASE_URL + src} alt={alt} /> */}
+        </ScrollinView>
+      ))}
+    </section>
+  );
 }

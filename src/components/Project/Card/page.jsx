@@ -19,7 +19,16 @@ export default function Card({ data }) {
     <div className={styles.container}>
       <TransitionLink href={"/project/" + slug}>
         <div className={styles.img}>
-          <DynamicImage url={BASE_URL + data.imgCard.url} alt={data.imgCard.alt} />
+          <Image
+            src={BASE_URL + data.imgCard.url}
+            alt={data.imgCard.alt}
+            fill
+            priority
+            quality={100}
+            sizes="(max-width: 1280px)100vw"
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          />
+          {/* <DynamicImage url={BASE_URL + data.imgCard.url} alt={data.imgCard.alt} /> */}
         </div>
 
         {/* <div className={styles.description}>
