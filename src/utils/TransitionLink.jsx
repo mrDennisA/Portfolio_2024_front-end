@@ -51,7 +51,7 @@ export const TransitionBack = ({ children, href, ...props }) => {
     await sleep(time);
     lenis.stop();
 
-    router.push(href);
+    router.back();
 
     lenis.start();
     await sleep(time);
