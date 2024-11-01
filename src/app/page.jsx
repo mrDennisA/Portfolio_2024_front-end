@@ -1,6 +1,6 @@
 //Components
 import { ThemeToggle } from "@/contexts/themeContext";
-import Banner from "../components/Banner/page";
+import Banner from "@/components/Banner/page";
 import Introduction from "@/components/Introduction/page";
 import Contact from "@/components/Contact/page";
 import ProjectList from "../components/Project/List/page";
@@ -30,9 +30,9 @@ export default async function Home() {
     <>
       {/* <ThemeToggle data={data.colorBG}> */}
       <Banner data={data} />
-      <Introduction data={data.detail} />
-      <Contact data={data.contact} />
-      <ProjectList />
+      {/* <Introduction data={data.detail} /> */}
+      {/* <Contact data={data.contact} /> */}
+      {/* <ProjectList /> */}
       {/* </ThemeToggle> */}
     </>
   );
