@@ -30,9 +30,9 @@ export default async function Home() {
     <>
       {/* <ThemeToggle data={data.colorBG}> */}
       <Banner data={data} />
-      <Introduction data={data.detail} />
-      <Contact data={data.contact} />
-      <ProjectList />
+      {/* <Introduction data={data.detail} /> */}
+      {/* <Contact data={data.contact} /> */}
+      {/* <ProjectList /> */}
       {/* </ThemeToggle> */}
     </>
   );
