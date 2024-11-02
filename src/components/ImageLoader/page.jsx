@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import getImage from "@/util/getImage";
 
-export default async function ImageLoader({ src, alt = "", styles }) {
+export default async function ImageLoader({ src, alt = "", styles = "" }) {
   const { base64, img } = await getImage(src);
 
   return (
