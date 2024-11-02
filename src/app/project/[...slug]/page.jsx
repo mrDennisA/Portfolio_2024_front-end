@@ -1,11 +1,12 @@
 // Components
-import { ThemeToggle } from "@/contexts/themeContext";
+import { ThemeToggle } from "@/context/themeContext";
 import Banner from "@/components/Banner/page";
 
 import Detail from "@/components/Project/Detail/page";
 
 // API
 import { PROJECTS_URL } from "@/constants/api";
+import wait from "@/util/wait";
 
 // GetData
 async function getData(params) {
@@ -31,6 +32,7 @@ async function getData(params) {
 // Render
 export default async function Project({ params }) {
   const data = await getData(params);
+  // await wait(10000);
 
   return (
     <>

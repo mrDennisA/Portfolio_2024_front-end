@@ -3,7 +3,6 @@ import Image from "next/image";
 //Components
 import Parallax from "@/components/FramerMotion/Parallax/page";
 import Title from "@/components/Text/Title/page";
-import DynamicImage from "@/components/DynamicImage/page";
 
 //URL
 import { BASE_URL } from "@/constants/api";

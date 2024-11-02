@@ -2,7 +2,6 @@ import Image from "next/image";
 
 //Components
 import ScrollinView from "@/components/FramerMotion/ScrollInView/page";
-import DynamicImage from "../DynamicImage/page";
 
 //URL
 import { BASE_URL } from "@/constants/api";
@@ -26,7 +25,6 @@ export default function ImgType({ data }) {
             sizes="(max-width: 1280px)100vw"
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
-          {/* <DynamicImage url={BASE_URL + src} alt={alt} /> */}
         </ScrollinView>
       ))}
     </section>

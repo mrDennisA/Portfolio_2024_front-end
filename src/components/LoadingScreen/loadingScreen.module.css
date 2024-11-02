@@ -1,0 +1,13 @@
+.section {
+  z-index: 1000;
+  position: relative;
+  /* overflow: hidden; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  background-color: var(--bgColorDark);
+}

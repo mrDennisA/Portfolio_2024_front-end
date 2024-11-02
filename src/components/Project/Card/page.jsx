@@ -2,8 +2,6 @@ import Image from "next/image";
 
 //Components
 import { TransitionLink } from "@/components/TransitionLink/page";
-import { ParallaxCard } from "@/components/FramerMotion/Parallax/page";
-import DynamicImage from "@/components/DynamicImage/page";
 
 //URL
 import { BASE_URL } from "@/constants/api";
@@ -28,7 +26,6 @@ export default function Card({ data }) {
             sizes="(max-width: 1280px)100vw"
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
-          {/* <DynamicImage url={BASE_URL + data.imgCard.url} alt={data.imgCard.alt} /> */}
         </div>
 
         {/* <div className={styles.description}>

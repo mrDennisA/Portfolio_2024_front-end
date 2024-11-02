@@ -3,7 +3,7 @@
 import { createContext } from "react";
 import { useLenis, ReactLenis } from "lenis/react";
 
-import { AppContext } from "@/contexts/context";
+import { AppContext } from "@/context/context";
 
 export const LenisContext = createContext();
 
