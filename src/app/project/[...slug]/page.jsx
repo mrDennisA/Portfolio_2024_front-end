@@ -37,9 +37,8 @@ export default async function Project({ params }) {
   return (
     <>
       {/* <ThemeToggle data={data.colorBG}> */}
-      <Suspense fallback={<h1>Loading...</h1>}>
-        <Banner data={data} />
-      </Suspense>
+      {/* <LoadingScreen /> */}
+      <Banner data={data} />
       <Detail data={data.detail} />
       {/* </ThemeToggle> */}
     </>

@@ -1,25 +1,33 @@
 import Image from "next/image";
+import { getPlaiceholder } from "plaiceholder";
 
-import getImage from "@/util/getImage";
 import InView from "../FramerMotion/InView/page";
+import ImageDynamic from "../ImageDynamic/page";
 
+//Get Plaiceholder
+async function getImage(src) {
+  try {
+    const res = await fetch(src);
+    const buffer = await res.arrayBuffer();
+    const {
+      base64,
+      color,
+      metadata: { height, width },
+    } = await getPlaiceholder(Buffer.from(buffer));
+
+    return { base64, color, img: { src, height, width } };
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+// Render
 export default async function ImageLoader({ src, alt = "", styles = "" }) {
   const { base64, color, img } = await getImage(src);
 
   return (
-    <InView color={color.hex}>
-      <Image
-        className={styles}
-        src={img.src}
-        alt={alt}
-        // placeholder="blur"
-        // blurDataURL={base64}
-        width={img.width}
-        height={img.height}
-        quality={100}
-        sizes="(max-width: 1280px)100vw"
-        style={{ width: "100%", height: "100%", objectFit: "cover" }}
-      />
-    </InView>
+    // <InView color={color.hex}>
+    <ImageDynamic data={{ alt, base64, color, img, styles }} />
+    // </InView>
   );
 }

@@ -1,5 +1,5 @@
 //Components
-import ImgType from "@/components/ImgType/page";
+import ImgType from "@/components/ImageType/page";
 
 //Styles
 import Introduction from "@/components/Introduction/page";

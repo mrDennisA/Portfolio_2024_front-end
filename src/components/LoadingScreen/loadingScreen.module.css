@@ -1,13 +1,17 @@
 .section {
-  z-index: 1000;
   position: relative;
+  /* z-index: 1000;
+  position: relative; */
   /* overflow: hidden; */
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* background-color: var(--bgColorDark); */
+  aspect-ratio: 16/9;
+}
 
-  height: 100vh;
-
-  background-color: var(--bgColorDark);
+.container {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
