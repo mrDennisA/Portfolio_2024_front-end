@@ -1,8 +1,6 @@
 .container {
   display: grid;
   gap: var(--gap);
-
-  /* padding-bottom: var(--divider); */
 }
 
 .title {

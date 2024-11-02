@@ -32,7 +32,7 @@
   --divider: clamp(3rem, 1rem + 6.667vw, 6rem);
   --gap: 1.5rem;
 
-  --transition: 0.15s ease;
+  --transition: 0.3s ease;
 }
 
 @media only screen and (min-width: 768px) {

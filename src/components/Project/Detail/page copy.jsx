@@ -1,4 +1,5 @@
 //Components
+import Paragraph from "@/components/Text/Paragraph/page";
 import ImgType from "@/components/ImgType/page";
 
 //Styles

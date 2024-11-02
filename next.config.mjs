@@ -5,11 +5,17 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "www.dalekseev.dev",
-        port: "",
+        // protocol: "https",
+        hostname: "localhost",
+        port: "3000",
         pathname: "/img/**",
       },
+      // {
+      //   protocol: "https",
+      //   hostname: "www.dalekseev.dev",
+      //   port: "",
+      //   pathname: "/img/**",
+      // },
     ],
   },
 };
