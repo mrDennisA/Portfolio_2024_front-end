@@ -3,6 +3,9 @@
   justify-content: center;
   padding: 3rem;
   gap: var(--padding);
+
+  /* Layout */
+  margin-top: auto;
 }
 
 .container a {

@@ -16,7 +16,7 @@ export default function Card({ data }) {
   return (
     <div className={styles.container}>
       <TransitionLink href={"/project/" + slug}>
-        <div className={styles.img}>
+        <div className={styles.imgContainer}>
           <Image
             src={BASE_URL + data.imgCard.url}
             alt={data.imgCard.alt}

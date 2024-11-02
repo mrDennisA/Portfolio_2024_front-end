@@ -53,20 +53,17 @@
 }
 
 body {
+  /* Layout */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
   color: var(--textColorLight);
   background-color: var(--bgColorDark);
-  /* background-color: #464d4f; */
 }
 
-.wrapper {
-  /* display: grid;
-  grid-template-rows: 1fr auto; */
-
-  /* width: 100%;
-  margin: 0 auto;
-  max-width: var(--xl); */
-
-  /* min-height: 100vh; */
+main {
+  position: relative;
 }
 
 a,

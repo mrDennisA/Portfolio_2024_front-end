@@ -17,16 +17,6 @@ export default function ImgType({ data }) {
       {data.img.map((item, index) => (
         <ScrollinView key={index} styles={styles.parallax}>
           <ImageLoader src={BASE_URL + item.url} alt={item.alt} />
-          {/* <Image
-            src={BASE_URL + item.url}
-            alt={item.alt}
-            priority
-            quality={100}
-            width={1280}
-            height={1280}
-            sizes="(max-width: 1280px)100vw"
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          /> */}
         </ScrollinView>
       ))}
     </section>

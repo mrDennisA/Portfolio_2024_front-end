@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { getPlaiceholder } from "plaiceholder";
 
-import InView from "../FramerMotion/InView/page";
 import ImageDynamic from "../ImageDynamic/page";
 
 //Get Plaiceholder
@@ -23,11 +22,7 @@ async function getImage(src) {
 
 // Render
 export default async function ImageLoader({ src, alt = "", styles = "" }) {
-  const { base64, color, img } = await getImage(src);
+  const { base64, img } = await getImage(src);
 
-  return (
-    // <InView color={color.hex}>
-    <ImageDynamic data={{ alt, base64, color, img, styles }} />
-    // </InView>
-  );
+  return <ImageDynamic data={{ src, alt, base64, img, styles }} />;
 }
