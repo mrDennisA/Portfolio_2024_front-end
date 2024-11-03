@@ -1,17 +1,16 @@
 .section {
   position: relative;
-  /* z-index: 1000;
-  position: relative; */
-  /* overflow: hidden; */
 
-  /* background-color: var(--bgColorDark); */
-  /* aspect-ratio: 16/9; */
   display: flex;
   height: 50vh;
+
+  /* Layou */
+  width: 100%;
+  margin: 0 auto;
+  max-width: var(--xl);
 }
 
 .container {
-  z-index: 1000;
   position: absolute;
 
   top: 50%;
@@ -28,6 +27,7 @@
   }
 }
 
+/* Loading Icon*/
 .svg {
   position: relative;
 
