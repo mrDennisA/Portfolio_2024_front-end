@@ -21,7 +21,7 @@
   aspect-ratio: 4/5;
 
   overflow: hidden;
-  /* border-radius: var(--radius); */
+  border-radius: var(--radius);
 }
 
 .imgContainer {
@@ -47,6 +47,7 @@
   padding: var(--padding);
 
   width: 100%;
+  backdrop-filter: blur(8px);
 }
 
 .client {
