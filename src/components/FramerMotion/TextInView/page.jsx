@@ -7,10 +7,10 @@ export default function TextInView({ children, color, styles = "" }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1 0.2"],
+    offset: ["1 1", "1 0.8"],
   });
 
-  const transformYProgress = useTransform(scrollYProgress, [0, 0.2], ["100%", "0%"]);
+  const transformYProgress = useTransform(scrollYProgress, [0, 1], ["100%", "0%"]);
 
   return (
     <motion.div
