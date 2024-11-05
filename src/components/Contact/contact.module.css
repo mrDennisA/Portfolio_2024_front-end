@@ -3,6 +3,7 @@
   padding: var(--divider) var(--paddingLG);
   gap: var(--divider);
 
+  /* Layout */
   width: 100%;
   margin: 0 auto;
   max-width: var(--xl);

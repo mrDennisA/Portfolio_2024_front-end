@@ -29,10 +29,12 @@ export default async function ProjectList() {
   const projects = await getData();
 
   return (
-    <ScrollHorizontal>
+    <section className={styles.section}>
+      {/* <ScrollHorizontal> */}
       {projects.map((item, index) => {
         return <Card key={index} data={item} />;
       })}
-    </ScrollHorizontal>
+      {/* </ScrollHorizontal> */}
+    </section>
   );
 }

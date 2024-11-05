@@ -8,6 +8,7 @@ import { BASE_URL } from "@/constants/api";
 
 // Styles
 import styles from "./card.module.css";
+import TextInView from "@/components/FramerMotion/TextInView/page";
 
 // Render
 export default function Card({ data }) {
@@ -27,15 +28,12 @@ export default function Card({ data }) {
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
         </div>
-
-        {/* <div className={styles.description}>
-            <div className={styles.client}>{data.client}</div>
-            <h3>
-              {data.title.map((item, index) => (
-                <span key={index}>{item}</span>
-              ))}
-            </h3>
-          </div> */}
+        <TextInView styles={styles.description} color={data.colorBG}>
+          {/* <div className={styles.description} style={{ backgroundColor: data.colorBG }}> */}
+          <span className={styles.client}>{data.client}</span>
+          <h3 className={styles.title}>{data.title}</h3>
+          {/* </div> */}
+        </TextInView>
       </TransitionLink>
     </div>
   );
