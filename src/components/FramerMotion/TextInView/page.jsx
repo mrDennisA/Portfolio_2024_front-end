@@ -18,7 +18,7 @@ export default function TextInView({ children, color, styles = "" }) {
       className={styles}
       style={{
         y: transformYProgress,
-        backgroundColor: color,
+        backgroundColor: color + "CC",
       }}
     >
       {children}
