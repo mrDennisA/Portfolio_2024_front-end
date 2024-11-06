@@ -18,7 +18,9 @@
   position: relative;
 
   display: flex;
-  aspect-ratio: 4/5;
+  flex-direction: column;
+
+  aspect-ratio: 9/16;
 
   overflow: hidden;
   /* border-radius: var(--radius); */
@@ -38,8 +40,8 @@
 
 /* Title */
 .description {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
   /* transform: translateY(100%); */
 
   display: flex;

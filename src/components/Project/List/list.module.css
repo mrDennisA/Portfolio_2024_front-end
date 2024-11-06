@@ -5,22 +5,16 @@
   /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: 1fr;
 
-  gap: var(--divider);
-
   /* Layout */
   width: 100%;
   margin: 0 auto;
   max-width: var(--xl);
 }
 
-/* @media only screen and (min-width: 576px) {
-  .container {
+@media only screen and (min-width: 576px) {
+  .section {
     grid-template-columns: repeat(2, 1fr);
+
+    gap: 0 var(--padding);
   }
 }
-
-@media only screen and (min-width: 768px) {
-  .container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-} */
