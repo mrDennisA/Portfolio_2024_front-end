@@ -28,15 +28,18 @@
 
 .imgContainer {
   position: relative;
-
   aspect-ratio: 4/5;
 }
 
-/* @media only screen and (min-width: 576px) {
-  .imgContainer {
+@media only screen and (min-width: 576px) {
+  .container > a {
     aspect-ratio: 9/16;
   }
-} */
+
+  .imgContainer {
+    aspect-ratio: 4/5;
+  }
+}
 
 /* Title */
 .description {
