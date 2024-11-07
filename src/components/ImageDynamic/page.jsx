@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function ImageDynamic({ data }) {
   const [isImageLoading, setImageLoading] = useState(false);
 
-  const { src, alt, base64, img, styles, priority = false } = data;
+  const { src, alt, base64, img, styles, loading = "lazy" } = data;
 
   return (
     <Image
@@ -17,7 +17,7 @@ export default function ImageDynamic({ data }) {
       // blurDataURL={base64}
       width={img.width}
       height={img.height}
-      priority={priority}
+      loading={loading}
       // quality={100}
       sizes="(max-width: 1280px)100vw"
       // style={{ width: "100%", height: "100%", objectFit: "cover" }}
