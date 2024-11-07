@@ -21,7 +21,7 @@
   flex-direction: column;
   gap: 0.5rem;
 
-  aspect-ratio: 9/16;
+  aspect-ratio: 1/1;
 
   overflow: hidden;
   /* border-radius: var(--radius); */
@@ -29,10 +29,10 @@
 
 .imgContainer {
   position: relative;
-  aspect-ratio: 4/5;
+  aspect-ratio: 1/1;
 }
 
-@media only screen and (min-width: 576px) {
+/* @media only screen and (min-width: 576px) {
   .container > a {
     aspect-ratio: 9/16;
   }
@@ -40,7 +40,7 @@
   .imgContainer {
     aspect-ratio: 4/5;
   }
-}
+} */
 
 /* Title */
 .description {
