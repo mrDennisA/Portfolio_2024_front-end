@@ -35,7 +35,7 @@ export const TransitionLink = ({ children, href, ...props }) => {
   };
 
   return (
-    <Link {...props} href={href} onClick={handleTransition} prefetch={true}>
+    <Link {...props} href={href} onMouseDown={handleTransition} prefetch={true}>
       {children}
     </Link>
   );
@@ -61,7 +61,7 @@ export const TransitionBack = ({ children, href, ...props }) => {
   };
 
   return (
-    <Link {...props} href={href} onClick={handleTransition}>
+    <Link {...props} href={href} onMouseDown={handleTransition}>
       {children}
     </Link>
   );
