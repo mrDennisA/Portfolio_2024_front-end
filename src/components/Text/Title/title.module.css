@@ -14,7 +14,7 @@
 }
 
 .client {
-  font-family: var(--fontCondensed);
+  font-family: var(--font-robotoCondensed);
   font-style: italic;
   font-weight: 200;
   font-size: clamp(1.5rem, 0.8333rem + 2.2222vw, 2.5rem);

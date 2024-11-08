@@ -1,13 +1,13 @@
-@import "./robotoFont.css";
-@import "./robotoCondensedFont.css";
+/* @import "./robotoFont.css";
+@import "./robotoCondensedFont.css"; */
 
 :root {
-  --font: "Roboto", sans-serif;
-  --fontCondensed: "Roboto Condensed", sans-serif;
+  /* --font: "Roboto", sans-serif; */
+  /* --fontCondensed: "Roboto Condensed", sans-serif; */
 }
 
-* {
-  font-family: var(--font);
+html {
+  font-family: var(--font-roboto);
 }
 
 h1 {

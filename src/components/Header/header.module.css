@@ -52,7 +52,7 @@
 }
 
 .link * {
-  font-family: var(--fontCondensed);
+  font-family: var(--font-robotoCondensed);
   font-size: 1.25rem;
   font-weight: 300;
   text-shadow: var(--shadow);
