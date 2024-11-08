@@ -12,7 +12,7 @@ import { PROJECTS_URL } from "@/constants/api";
 // GetData
 async function getData(params) {
   try {
-    const res = await fetch(PROJECTS_URL, { next: { revalidate: 3600 } }); // invalidate every hour
+    const res = await fetch(PROJECTS_URL, { next: { revalidate: 60 } }); // invalidate every hour
     const data = await res.json();
 
     const project = data.find((item) => {

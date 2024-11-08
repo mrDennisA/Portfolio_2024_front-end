@@ -11,6 +11,7 @@ import styles from "./banner.module.css";
 
 export default function Banner({ data }) {
   const { imgBanner, color, title, client } = data;
+  console.log(data);
 
   return (
     <section className={styles.container}>
