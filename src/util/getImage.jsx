@@ -1,17 +1,17 @@
 import { getPlaiceholder } from "plaiceholder";
 
 //Get Plaiceholder
-export default async function getImage(src) {
+export default async function getImage(url) {
   try {
-    const res = await fetch(src);
+    const res = await fetch(url);
     const buffer = await res.arrayBuffer();
     const {
       base64,
       color,
-      metadata: { height, width },
+      metadata: { width, height },
     } = await getPlaiceholder(Buffer.from(buffer));
 
-    return { base64, color, img: { src, height, width } };
+    return { base64, color, width, height };
   } catch (error) {
     console.log(error);
   }

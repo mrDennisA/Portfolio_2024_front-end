@@ -16,7 +16,7 @@ export default function ImgType({ data }) {
     <section className={styles[data.type]}>
       {data.img.map((item, index) => (
         <ScrollinView key={index} styles={styles.parallax}>
-          <ImageLoader src={BASE_URL + item.url} alt={item.alt} />
+          <ImageLoader url={BASE_URL + item.url} alt={item.alt} />
         </ScrollinView>
       ))}
     </section>

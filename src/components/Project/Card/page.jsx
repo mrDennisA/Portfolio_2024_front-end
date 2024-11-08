@@ -10,6 +10,7 @@ import { BASE_URL } from "@/constants/api";
 import styles from "./card.module.css";
 import TextInView from "@/components/FramerMotion/TextInView/page";
 import ImageLoader from "@/components/ImageLoader/page";
+import ImageDynamic from "@/components/ImageDynamic/page";
 
 // Render
 export default async function Card({ data }) {
@@ -19,7 +20,7 @@ export default async function Card({ data }) {
     <div className={styles.container}>
       <TransitionLink href={"/project/" + slug}>
         <div className={styles.imgContainer}>
-          <ImageLoader src={BASE_URL + data.imgCard.url} alt={data.imgCard.alt} />
+          <ImageDynamic data={data.imgCard} />
         </div>
         {/* <TextInView styles={styles.description} color={data.colorBG}> */}
         <div className={styles.description}>
