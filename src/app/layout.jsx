@@ -10,7 +10,6 @@ import SmoothScrolling from "@/util/lenis";
 
 // Styles
 import "../styles/globals.css";
-import Loading from "@/components/LoadingScreen/page";
 
 export const metadata = {
   title: "DAlekseev.dev Portfolio",

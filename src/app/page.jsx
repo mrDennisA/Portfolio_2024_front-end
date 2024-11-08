@@ -7,11 +7,12 @@ import ProjectList from "../components/Project/List/page";
 
 // API
 import { HOME_URL } from "@/constants/api";
+import { revalidate } from "@/util/revalidate";
 
 // GetData
 async function getData() {
   try {
-    const res = await fetch(HOME_URL, { next: { revalidate: 60 } }); // invalidate every hour
+    const res = await fetch(HOME_URL, { next: { revalidate: revalidate } }); // invalidate every hour
     const data = await res.json();
 
     return data;

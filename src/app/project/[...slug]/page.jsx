@@ -10,15 +10,25 @@ import LoadingScreen from "@/components/LoadingScreen/page";
 import { PROJECTS_URL } from "@/constants/api";
 import { revalidate } from "@/util/revalidate";
 
+//GetParams
+export async function generateStaticParams() {
+  const res = await fetch(PROJECTS_URL, { next: { revalidate: revalidate } }); // invalidate every hour
+  const data = await res.json();
+
+  return data.map((item) => ({
+    slug: [item.slugClient, item.slugTitle],
+  }));
+}
+
 // GetData
-async function getData(params) {
+async function getData(slug) {
   try {
     const res = await fetch(PROJECTS_URL, { next: { revalidate: revalidate } }); // invalidate every hour
     const data = await res.json();
 
     const project = data.find((item) => {
       const slugItem = item.slugClient + "/" + item.slugTitle;
-      const slugParams = params.slug[0] + "/" + params.slug[1];
+      const slugParams = slug[0] + "/" + slug[1];
 
       return slugItem === slugParams;
     });
@@ -31,8 +41,7 @@ async function getData(params) {
 
 // Render
 export default async function Project({ params }) {
-  console.log(params.slug);
-  const data = await getData(params);
+  const data = await getData(params.slug);
 
   return (
     <>
