@@ -12,8 +12,6 @@ import { PROJECTS_URL } from "@/constants/api";
 // GetData
 async function getData(params) {
   try {
-    // await new Promise((resolve) => setTimeout(resolve, 2000));
-
     const res = await fetch(PROJECTS_URL, { next: { revalidate: 3600 } }); // invalidate every hour
     const data = await res.json();
 

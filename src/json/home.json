@@ -6,11 +6,15 @@
   "imgBanner": [
     {
       "url": "/img/banner_home_back.jpg",
-      "alt": "Banner Background"
+      "alt": "Banner Background",
+      "width": 1280,
+      "height": 720
     },
     {
       "url": "/img/banner_home_front.png",
-      "alt": "Banner Foreground"
+      "alt": "Banner Foreground",
+      "width": 1280,
+      "height": 720
     }
   ],
   "detail": {

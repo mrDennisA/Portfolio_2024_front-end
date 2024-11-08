@@ -9,12 +9,16 @@
     "client": "Community Science Museum",
     "imgCard": {
       "url": "/img/school/csm/banner_card.jpg",
-      "alt": "imgCard"
+      "alt": "imgCard",
+      "width": 540,
+      "height": 540
     },
     "imgBanner": [
       {
         "url": "/img/school/csm/banner.jpg",
-        "alt": "imgBanner"
+        "alt": "imgBanner",
+        "width": 1280,
+        "height": 720
       }
     ],
     "detail": [
@@ -62,12 +66,16 @@
     "client": "Rainydays",
     "imgCard": {
       "url": "/img/school/rainydays/banner_card.jpg",
-      "alt": "imgCard"
+      "alt": "imgCard",
+      "width": 540,
+      "height": 540
     },
     "imgBanner": [
       {
         "url": "/img/school/rainydays/banner.jpg",
-        "alt": "imgBanner"
+        "alt": "imgBanner",
+        "width": 1280,
+        "height": 720
       }
     ],
     "detail": [
@@ -119,12 +127,16 @@
     "client": "Blog Site",
     "imgCard": {
       "url": "/img/school/blog_site/banner_card.jpg",
-      "alt": "imgCard"
+      "alt": "imgCard",
+      "width": 540,
+      "height": 540
     },
     "imgBanner": [
       {
         "url": "/img/school/blog_site/banner.jpg",
-        "alt": "imgBanner"
+        "alt": "imgBanner",
+        "width": 1280,
+        "height": 720
       }
     ],
     "detail": [
@@ -180,12 +192,16 @@
     "client": "Home Decor",
     "imgCard": {
       "url": "/img/school/home_decor/banner_card.jpg",
-      "alt": "imgCard"
+      "alt": "imgCard",
+      "width": 540,
+      "height": 540
     },
     "imgBanner": [
       {
         "url": "/img/school/home_decor/banner.jpg",
-        "alt": "imgBanner"
+        "alt": "imgBanner",
+        "width": 1280,
+        "height": 720
       }
     ],
     "detail": [
@@ -249,12 +265,16 @@
     "client": "VOKE",
     "imgCard": {
       "url": "/img/school/voke/banner_card.jpg",
-      "alt": "imgCard"
+      "alt": "imgCard",
+      "width": 540,
+      "height": 540
     },
     "imgBanner": [
       {
         "url": "/img/school/voke/banner.jpg",
-        "alt": "imgBanner"
+        "alt": "imgBanner",
+        "width": 1280,
+        "height": 720
       }
     ],
     "detail": [
@@ -322,12 +342,16 @@
     "client": "ROAM",
     "imgCard": {
       "url": "/img/client/roam/christmas_gift_box/banner_card.jpg",
-      "alt": "imgCard"
+      "alt": "imgCard",
+      "width": 540,
+      "height": 540
     },
     "imgBanner": [
       {
         "url": "/img/client/roam/christmas_gift_box/banner.jpg",
-        "alt": "imgBanner"
+        "alt": "imgBanner",
+        "width": 1280,
+        "height": 720
       }
     ],
     "detail": [
@@ -375,12 +399,16 @@
     "client": "Eleni + Chris",
     "imgCard": {
       "url": "/img/client/elenichris/christmas_giftset/banner_card.jpg",
-      "alt": "imgCard"
+      "alt": "imgCard",
+      "width": 540,
+      "height": 540
     },
     "imgBanner": [
       {
         "url": "/img/client/elenichris/christmas_giftset/banner.jpg",
-        "alt": "imgBanner"
+        "alt": "imgBanner",
+        "width": 1280,
+        "height": 720
       }
     ],
     "detail": [
@@ -433,12 +461,16 @@
     "client": "Eleni + Chris",
     "imgCard": {
       "url": "/img/client/elenichris/sea_salt_spray/banner_card.jpg",
-      "alt": "imgCard"
+      "alt": "imgCard",
+      "width": 540,
+      "height": 540
     },
     "imgBanner": [
       {
         "url": "/img/client/elenichris/sea_salt_spray/banner.jpg",
-        "alt": "imgBanner"
+        "alt": "imgBanner",
+        "width": 1280,
+        "height": 720
       }
     ],
     "detail": [
@@ -491,12 +523,16 @@
     "client": "Eleni + Chris",
     "imgCard": {
       "url": "/img/client/elenichris/skincare/banner_card.jpg",
-      "alt": "imgCard"
+      "alt": "imgCard",
+      "width": 540,
+      "height": 540
     },
     "imgBanner": [
       {
         "url": "/img/client/elenichris/skincare/banner.jpg",
-        "alt": "imgBanner"
+        "alt": "imgBanner",
+        "width": 1280,
+        "height": 720
       }
     ],
     "detail": [

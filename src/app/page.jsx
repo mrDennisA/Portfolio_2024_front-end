@@ -11,8 +11,6 @@ import { HOME_URL } from "@/constants/api";
 // GetData
 async function getData() {
   try {
-    // await new Promise((resolve) => setTimeout(resolve, 2000));
-
     const res = await fetch(HOME_URL, { next: { revalidate: 3600 } }); // invalidate every hour
     const data = await res.json();
 
