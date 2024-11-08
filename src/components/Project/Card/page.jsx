@@ -20,7 +20,7 @@ export default async function Card({ data }) {
     <div className={styles.container}>
       <TransitionLink href={"/project/" + slug}>
         <div className={styles.imgContainer}>
-          <ImageDynamic data={data.imgCard} />
+          <ImageLoader data={data.imgCard} />
         </div>
         {/* <TextInView styles={styles.description} color={data.colorBG}> */}
         <div className={styles.description}>
