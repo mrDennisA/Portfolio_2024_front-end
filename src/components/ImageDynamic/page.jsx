@@ -9,7 +9,6 @@ export default function ImageDynamic({ data, styles = "", loading = "lazy" }) {
   const { url, alt, width, height, base64, color } = data;
 
   return (
-    // <div style={{ width: "100%", height: "100%", backgroundColor: color.hex }}>
     <Image
       className={styles}
       src={url}
@@ -25,6 +24,5 @@ export default function ImageDynamic({ data, styles = "", loading = "lazy" }) {
       style={{ width: "100%", height: "100%", objectFit: "cover", opacity: isImageLoading ? 1 : 0, transition: "opacity 0.3s ease" }}
       onLoad={() => setImageLoading(true)}
     />
-    // </div>
   );
 }

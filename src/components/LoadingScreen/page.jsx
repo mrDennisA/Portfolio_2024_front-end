@@ -1,4 +1,3 @@
-import wait from "@/util/wait";
 import styles from "./loadingScreen.module.css";
 
 export default function LoadingScreen() {

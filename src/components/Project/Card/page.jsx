@@ -10,7 +10,6 @@ import { BASE_URL } from "@/constants/api";
 import styles from "./card.module.css";
 import TextInView from "@/components/FramerMotion/TextInView/page";
 import ImageLoader from "@/components/ImageLoader/page";
-import ImageDynamic from "@/components/ImageDynamic/page";
 
 // Render
 export default async function Card({ data }) {
