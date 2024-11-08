@@ -8,11 +8,12 @@ import LoadingScreen from "@/components/LoadingScreen/page";
 
 // API
 import { PROJECTS_URL } from "@/constants/api";
+import { revalidate } from "@/util/revalidate";
 
 // GetData
 async function getData(params) {
   try {
-    const res = await fetch(PROJECTS_URL, { next: { revalidate: 60 } }); // invalidate every hour
+    const res = await fetch(PROJECTS_URL, { next: { revalidate: revalidate } }); // invalidate every hour
     const data = await res.json();
 
     const project = data.find((item) => {
@@ -30,6 +31,7 @@ async function getData(params) {
 
 // Render
 export default async function Project({ params }) {
+  console.log(params.slug);
   const data = await getData(params);
 
   return (

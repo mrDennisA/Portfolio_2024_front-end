@@ -1,5 +1,5 @@
 // Component
-import { ChildrenInView, PerantInView } from "@/components/FramerMotion/AnimationInView/page";
+
 import Card from "../Card/page";
 
 // Styles
@@ -7,15 +7,12 @@ import styles from "./list.module.css";
 
 // API
 import { PROJECTS_URL } from "@/constants/api";
-import ScrollinView from "@/components/FramerMotion/ScrollInView/page";
-import ScrollHorizontal from "@/components/FramerMotion/ScrollHorizontal/page";
+import { revalidate } from "@/util/revalidate";
 
 // GetData
 async function getData() {
   try {
-    // await new Promise((resolve) => setTimeout(resolve, 2000));
-
-    const res = await fetch(PROJECTS_URL, { next: { revalidate: 0 } });
+    const res = await fetch(PROJECTS_URL, { next: { revalidate: revalidate } });
     const data = await res.json();
 
     return data.reverse();
