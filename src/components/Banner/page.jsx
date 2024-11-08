@@ -1,7 +1,6 @@
 //Components
 import Parallax from "@/components/FramerMotion/Parallax/page";
 import Title from "@/components/Text/Title/page";
-import ImageLoader from "../ImageLoader/page";
 
 // Styles
 import styles from "./banner.module.css";

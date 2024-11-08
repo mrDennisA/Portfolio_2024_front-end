@@ -4,9 +4,6 @@ import Image from "next/image";
 import ScrollinView from "@/components/FramerMotion/ScrollInView/page";
 import ImageLoader from "../ImageLoader/page";
 
-//URL
-import { BASE_URL } from "@/constants/api";
-
 //Styles
 import styles from "./img.module.css";
 
@@ -16,7 +13,7 @@ export default function ImgType({ data }) {
     <section className={styles[data.type]}>
       {data.img.map((item, index) => (
         <ScrollinView key={index} styles={styles.parallax}>
-          <ImageLoader url={BASE_URL + item.url} alt={item.alt} />
+          <ImageLoader url={item.url} alt={item.alt} />
         </ScrollinView>
       ))}
     </section>
