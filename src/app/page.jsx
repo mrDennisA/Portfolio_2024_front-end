@@ -6,13 +6,13 @@ import Contact from "@/components/Contact/page";
 import ProjectList from "../components/Project/List/page";
 
 // API
-import { HOME_URL } from "@/constants/api";
+import { HOME_URL, PROJECTS_URL } from "@/constants/api";
 import { revalidate } from "@/util/revalidate";
 
 // GetData
-async function getData() {
+async function getHomeData() {
   try {
-    const res = await fetch(HOME_URL, { next: { revalidate: revalidate } }); // invalidate every hour
+    const res = await fetch(HOME_URL, { next: { revalidate: revalidate } });
     const data = await res.json();
 
     return data;
@@ -21,17 +21,30 @@ async function getData() {
   }
 }
 
+async function getProjectsData() {
+  try {
+    const res = await fetch(PROJECTS_URL, { next: { revalidate: revalidate } });
+    const data = await res.json();
+
+    return data.reverse();
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 // Render
 export default async function Home() {
-  const data = await getData();
+  const homePromise = getHomeData();
+  const projectsPromise = getProjectsData();
+  const [homeData, projectsData] = await Promise.all([homePromise, projectsPromise]);
 
   return (
     <>
       {/* <ThemeToggle data={data.colorBG}> */}
-      <Banner data={data} />
-      <Introduction data={data.detail} />
-      <Contact data={data.contact} />
-      <ProjectList />
+      <Banner data={homeData} />
+      <Introduction data={homeData.detail} />
+      <Contact data={homeData.contact} />
+      <ProjectList data={projectsData} />
       {/* </ThemeToggle> */}
     </>
   );
