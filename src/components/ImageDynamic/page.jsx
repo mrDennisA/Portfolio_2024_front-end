@@ -9,22 +9,22 @@ export default function ImageDynamic({ data, styles = "", loading = "lazy" }) {
   const { url, alt, width, height, base64, color } = data;
 
   return (
-    <div style={{ width: "100%", height: "100%", backgroundColor: color.hex }}>
-      <Image
-        className={styles}
-        src={url}
-        alt={alt}
-        width={width}
-        height={height}
-        loading={loading}
-        // placeholder="blur"
-        // blurDataURL={base64}
-        sizes="(max-width: 1280px)100vw"
-        // style={{ width: "100%", height: "100%", objectFit: "cover" }}
-        // style={{ width: "100%", height: "100%", objectFit: "cover", filter: isImageLoading ? "blur(0px)" : "blur(4px)", transition: "filter 0.3s ease" }}
-        style={{ width: "100%", height: "100%", objectFit: "cover", opacity: isImageLoading ? 1 : 0, transition: "opacity 0.3s ease" }}
-        onLoad={() => setImageLoading(true)}
-      />
-    </div>
+    // <div style={{ width: "100%", height: "100%", backgroundColor: color.hex }}>
+    <Image
+      className={styles}
+      src={url}
+      alt={alt}
+      width={width}
+      height={height}
+      loading={loading}
+      // placeholder="blur"
+      // blurDataURL={base64}
+      sizes="(max-width: 1280px)100vw"
+      // style={{ width: "100%", height: "100%", objectFit: "cover" }}
+      // style={{ width: "100%", height: "100%", objectFit: "cover", filter: isImageLoading ? "blur(0px)" : "blur(4px)", transition: "filter 0.3s ease" }}
+      style={{ width: "100%", height: "100%", objectFit: "cover", opacity: isImageLoading ? 1 : 0, transition: "opacity 0.3s ease" }}
+      onLoad={() => setImageLoading(true)}
+    />
+    // </div>
   );
 }
