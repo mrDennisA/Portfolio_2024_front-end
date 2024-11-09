@@ -19,19 +19,16 @@ export const TransitionLink = ({ children, href = "", ...props }) => {
 
   const handleTransition = async (e) => {
     e.preventDefault();
-    const body = document.querySelector("body");
-
-    body?.classList.add("page-transition");
-    await wait(time);
+    // const body = document.querySelector("body");
+    // body?.classList.add("page-transition");
+    // await wait(time);
 
     lenis.stop();
-
     router.push(href);
-
     lenis.start();
 
-    await wait(time);
-    body?.classList.remove("page-transition");
+    // await wait(time);
+    // body?.classList.remove("page-transition");
   };
 
   return (
@@ -47,17 +44,16 @@ export const TransitionBack = ({ children, href = "", ...props }) => {
 
   const handleTransition = async (e) => {
     e.preventDefault();
-    const body = document.querySelector("body");
+    // const body = document.querySelector("body");
+    // body?.classList.add("page-transition");
+    // await wait(time);
 
-    body?.classList.add("page-transition");
-    await wait(time);
     lenis.stop();
-
     router.back();
-
     lenis.start();
-    await wait(time);
-    body?.classList.remove("page-transition");
+
+    // await wait(time);
+    // body?.classList.remove("page-transition");
   };
 
   return (

@@ -78,7 +78,7 @@ button {
 }
 
 /* TransitionLink */
-body {
+/* body {
   transition-property: opacity;
   transition-timing-function: ease;
   transition-duration: 0.15s;
@@ -90,7 +90,7 @@ body {
   transition-timing-function: ease;
   transition-duration: 0.15s;
   opacity: 0;
-}
+} */
 
 /* Lenis */
 html.lenis,
