@@ -29,3 +29,12 @@ export const Arrow = () => {
     </svg>
   );
 };
+
+export const ArrowSmall = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" className={styles.arrow}>
+      <line className="svg" x1="1" y1="8" x2="15" y2="8" />
+      <polyline className="svg" points="8 1 15 8 8 15" />
+    </svg>
+  );
+};

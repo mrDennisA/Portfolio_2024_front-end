@@ -10,10 +10,12 @@ import { BASE_URL } from "@/constants/api";
 import styles from "./card.module.css";
 import TextInView from "@/components/FramerMotion/TextInView/page";
 import ImageLoader from "@/components/ImageLoader/page";
+import { ArrowSmall } from "@/components/Icons/page";
 
 // Render
 export default async function Card({ data }) {
   const slug = data.slugClient + "/" + data.slugTitle;
+  // console.log(data.colorBG);
 
   return (
     <div className={styles.container}>
@@ -22,10 +24,16 @@ export default async function Card({ data }) {
           <ImageLoader data={data.imgCard} />
         </div>
         {/* <TextInView styles={styles.description} color={data.colorBG}> */}
-        <div className={styles.description}>
-          <span className={styles.client}>{data.client}</span>
+        <div className={styles.description} style={{ backgroundColor: data.colorBG + "CC" }}>
+          <div className={styles.clientContainer}>
+            <span className={styles.client}>{data.client}</span>
+            <span className={styles.arrow}>
+              <ArrowSmall />
+            </span>
+          </div>
           <h3 className={styles.title}>{data.title}</h3>
         </div>
+
         {/* </TextInView> */}
       </TransitionLink>
     </div>
