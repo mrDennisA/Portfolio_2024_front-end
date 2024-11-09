@@ -1,0 +1,65 @@
+/* List */
+.listContainer {
+  display: grid;
+  gap: var(--gap);
+  padding: var(--divider) var(--padding);
+
+  /* Layout */
+  width: 100%;
+  margin: 0 auto;
+  max-width: var(--xl);
+}
+
+.listItem {
+  display: grid;
+  gap: var(--gap);
+}
+
+.listItem ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.dash {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dash:not(:last-child)::after {
+  content: "-";
+}
+
+/* Table */
+.table {
+  display: grid;
+}
+
+.tableBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.tableRow {
+  display: grid;
+}
+
+@media only screen and (min-width: 576px) {
+  /* List */
+  .listPosition {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: var(--gap);
+  }
+
+  /* Table */
+  .tableRow {
+    grid-template-columns: 1fr 3fr;
+    gap: var(--gap);
+  }
+
+  .tableCell:first-child {
+    justify-self: end;
+  }
+}

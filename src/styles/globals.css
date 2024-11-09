@@ -6,7 +6,7 @@
 
   --bgColorLight: rgb(224, 224, 228);
   /* --bgColorDark: rgb(28, 27, 32); */
-  --bgColorDark: #1c1b20;
+  --bgColorDark: rgb(28, 27, 32);
 
   --buttonColor: rgb(28, 27, 32, 0.4);
   --buttonColorHover: rgba(28, 27, 32, 0.3);
@@ -74,7 +74,7 @@ button {
 
 .themeLight {
   background-color: var(--bgColorLight);
-  color: var(--textColorDark);
+  color: var(--bgColorDark);
 }
 
 /* TransitionLink */
