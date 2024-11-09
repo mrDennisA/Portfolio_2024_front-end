@@ -2,9 +2,8 @@
   display: grid;
   padding: var(--divider) var(--padding);
 
-  /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: var(--padding);
 
   /* Layout */
   width: 100%;
