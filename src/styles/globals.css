@@ -80,16 +80,16 @@ button {
 /* TransitionLink */
 body {
   transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  transition-duration: 150ms;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+  opacity: 1;
 }
 
 .page-transition {
-  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-property: opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
   opacity: 0;
-  /* background: var(--bgColorDark); */
-  /* transform: translateY(40px); */
-  /* filter: blur(12px); */
 }
 
 /* Lenis */

@@ -13,16 +13,16 @@ import wait from "@/util/wait";
 // Time
 const time = 150;
 
-export const TransitionLink = ({ children, href, ...props }) => {
+export const TransitionLink = ({ children, href = "", ...props }) => {
   const router = useRouter();
   const lenis = useContext(AppContext);
 
   const handleTransition = async (e) => {
     e.preventDefault();
-    // const body = document.querySelector("body");
+    const body = document.querySelector("body");
 
-    // body?.classList.add("page-transition");
-    // await wait(time);
+    body?.classList.add("page-transition");
+    await wait(time);
 
     lenis.stop();
 
@@ -30,8 +30,8 @@ export const TransitionLink = ({ children, href, ...props }) => {
 
     lenis.start();
 
-    // await wait(time);
-    // body?.classList.remove("page-transition");
+    await wait(time);
+    body?.classList.remove("page-transition");
   };
 
   return (
@@ -41,7 +41,7 @@ export const TransitionLink = ({ children, href, ...props }) => {
   );
 };
 
-export const TransitionBack = ({ children, href, ...props }) => {
+export const TransitionBack = ({ children, href = "", ...props }) => {
   const router = useRouter();
   const lenis = useContext(AppContext);
 
@@ -49,15 +49,15 @@ export const TransitionBack = ({ children, href, ...props }) => {
     e.preventDefault();
     const body = document.querySelector("body");
 
-    // body?.classList.add("page-transition");
-    // await wait(time);
+    body?.classList.add("page-transition");
+    await wait(time);
     lenis.stop();
 
     router.back();
 
     lenis.start();
-    // await wait(time);
-    // body?.classList.remove("page-transition");
+    await wait(time);
+    body?.classList.remove("page-transition");
   };
 
   return (
