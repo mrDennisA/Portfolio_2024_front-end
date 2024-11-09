@@ -3,7 +3,6 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function ScrollInView({ children, styles = "" }) {
-  // Framer Motion
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,

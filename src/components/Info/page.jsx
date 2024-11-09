@@ -1,4 +1,5 @@
 // Styles
+import ScrollInView from "../FramerMotion/ScrollInView/page";
 import styles from "./info.module.css";
 
 //Render
@@ -61,9 +62,15 @@ export default function Info({ data }) {
 
   return (
     <>
-      <List data={data.expertise} />
-      <Table data={data.experience} theme="themeLight" />
-      <Table data={data.education} />
+      <ScrollInView>
+        <List data={data.expertise} />
+      </ScrollInView>
+      <ScrollInView>
+        <Table data={data.experience} theme="themeLight" />
+      </ScrollInView>
+      <ScrollInView>
+        <Table data={data.education} />
+      </ScrollInView>
     </>
   );
 }

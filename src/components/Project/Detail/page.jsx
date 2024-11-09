@@ -18,7 +18,7 @@ export default function Detail({ data }) {
         ) : (
           <section key={index} className={styles[item.type]}>
             {item.img.map((img, index2) => (
-              <ScrollinView key={index2} styles={styles.parallax}>
+              <ScrollinView key={index2}>
                 <ImageLoader data={img} />
               </ScrollinView>
             ))}
