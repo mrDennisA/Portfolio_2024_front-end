@@ -1,5 +1,3 @@
-// import localFont from "next/font/local";
-
 // Component
 import Header from "../components/Header/page";
 import Footer from "@/components/Footer/page";
@@ -21,13 +19,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${roboto.variable} ${robotoCondensed.variable}`}>
       <SmoothScrolling>
-        {/* <ThemeContextProvider> */}
-        <body>
+        <ThemeContextProvider>
+          {/* <body> */}
           <Header />
           <main>{children}</main>
           <Footer />
-        </body>
-        {/* </ThemeContextProvider> */}
+          {/* </body> */}
+        </ThemeContextProvider>
       </SmoothScrolling>
     </html>
   );

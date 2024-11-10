@@ -78,21 +78,6 @@ button {
   color: var(--bgColorDark);
 }
 
-/* TransitionLink */
-/* body {
-  transition-property: opacity;
-  transition-timing-function: ease;
-  transition-duration: 0.15s;
-  opacity: 1;
-}
-
-.page-transition {
-  transition-property: opacity;
-  transition-timing-function: ease;
-  transition-duration: 0.15s;
-  opacity: 0;
-} */
-
 /* Lenis */
 html.lenis,
 html.lenis body {

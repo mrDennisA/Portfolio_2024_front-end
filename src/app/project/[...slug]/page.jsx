@@ -45,11 +45,11 @@ export default async function Project({ params }) {
 
   return (
     <>
-      {/* <ThemeToggle data={data.colorBG}> */}
-      {/* <LoadingScreen /> */}
-      <Banner data={data} transition={true} />
-      <Detail data={data.detail} />
-      {/* </ThemeToggle> */}
+      <ThemeToggle data={data.colorBG}>
+        {/* <LoadingScreen /> */}
+        <Banner data={data} transition={true} />
+        <Detail data={data.detail} />
+      </ThemeToggle>
     </>
   );
 }

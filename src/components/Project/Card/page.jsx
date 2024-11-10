@@ -16,7 +16,7 @@ export default async function Card({ data }) {
   // console.log(data.colorBG);
 
   return (
-    <TransitionLink className={styles.container} href={"/project/" + slug}>
+    <TransitionLink className={styles.container} href={"/project/" + slug} color={data.colorBG}>
       <div className={styles.imgContainer}>
         <ImageLoader data={data.imgCard} />
       </div>

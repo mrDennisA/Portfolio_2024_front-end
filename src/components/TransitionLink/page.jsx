@@ -13,13 +13,14 @@ import wait from "@/utils/wait";
 // Time
 const time = 150;
 
-export const TransitionLink = ({ children, href = "", ...props }) => {
+export const TransitionLink = ({ children, href = "", color, ...props }) => {
   const router = useRouter();
   const lenis = useContext(AppContext);
 
   const handleTransition = async (e) => {
     e.preventDefault();
-    // const body = document.querySelector("body");
+    const body = document.querySelector("body");
+    // body.style.backgroundColor = color;
     // body?.classList.add("page-transition");
     // await wait(time);
 
@@ -27,6 +28,7 @@ export const TransitionLink = ({ children, href = "", ...props }) => {
     router.push(href);
     lenis.start();
 
+    body.style.backgroundColor = color;
     // await wait(time);
     // body?.classList.remove("page-transition");
   };
@@ -44,6 +46,8 @@ export const TransitionBack = ({ children, href = "", ...props }) => {
 
   const handleTransition = async (e) => {
     e.preventDefault();
+    const body = document.querySelector("body");
+    body.style.backgroundColor = "";
     // const body = document.querySelector("body");
     // body?.classList.add("page-transition");
     // await wait(time);

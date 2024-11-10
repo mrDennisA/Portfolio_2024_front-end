@@ -26,7 +26,7 @@ export default function ImageTransition({ data, loading, transition = false, ...
               objectFit: "cover",
               opacity: imgLoading ? 0 : 1,
               transform: imgLoading ? "rotate(2deg) scale(1.1)" : "rotate(0) scale(1)",
-              transition: "2s ease .6s",
+              transition: "transform 2s ease 0.3s, opacity 2s ease 0.3s",
             }
           : { width: "100%", height: "100%", objectFit: "cover" }
       }

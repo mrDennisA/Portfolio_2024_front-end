@@ -41,13 +41,13 @@ export default async function Home() {
 
   return (
     <>
-      {/* <ThemeToggle data={data.colorBG}> */}
-      <Banner data={homeData} />
-      <Introduction data={homeData.detail} />
-      <Contact data={homeData.contact} />
-      <ProjectList data={projectsData} />
-      <Info data={homeData} />
-      {/* </ThemeToggle> */}
+      <ThemeToggle data={homePromise.colorBG}>
+        <Banner data={homeData} />
+        <Introduction data={homeData.detail} />
+        <Contact data={homeData.contact} />
+        <ProjectList data={projectsData} />
+        <Info data={homeData} />
+      </ThemeToggle>
     </>
   );
 }
