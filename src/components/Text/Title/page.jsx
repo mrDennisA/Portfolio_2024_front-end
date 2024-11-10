@@ -5,7 +5,9 @@ import { motion } from "framer-motion";
 //Styles
 import styles from "./title.module.css";
 
-export default function Title({ client, title, color }) {
+export default function Title({ data }) {
+  const { client, title, color } = data;
+
   const clientPerantVariants = {
     initial: { opacity: 0 },
     animate: (i = 1) => ({

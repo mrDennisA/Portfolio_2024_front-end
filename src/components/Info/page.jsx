@@ -1,5 +1,5 @@
 // Styles
-import ScrollInView from "../FramerMotion/ScrollInView/page";
+import { ScrollInView } from "../FramerMotion/ScrollInView/page";
 import styles from "./info.module.css";
 
 //Render

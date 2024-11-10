@@ -4,11 +4,12 @@ import Image from "next/image";
 import { TransitionLink } from "@/components/TransitionLink/page";
 
 //URL
-import { BASE_URL } from "@/constants/api";
 
 // Styles
 import styles from "./card.module.css";
-import TextInView from "@/components/FramerMotion/TextInView/page";
+import { HoverTilt } from "@/components/FramerMotion/page";
+import { CardParallax } from "@/components/FramerMotion/Parallax/page";
+import { CardInView } from "@/components/FramerMotion/ScrollInView/page";
 import ImageLoader from "@/components/ImageLoader/page";
 import { ArrowSmall } from "@/components/Icons/page";
 
@@ -18,24 +19,19 @@ export default async function Card({ data }) {
   // console.log(data.colorBG);
 
   return (
-    <div className={styles.container}>
-      <TransitionLink href={"/project/" + slug}>
-        <div className={styles.imgContainer}>
-          <ImageLoader data={data.imgCard} />
+    <TransitionLink className={styles.container} href={"/project/" + slug}>
+      <div className={styles.imgContainer}>
+        <ImageLoader data={data.imgCard} />
+      </div>
+      <div className={styles.description} style={{ backgroundColor: data.colorBG + "CC" }}>
+        <div className={styles.clientContainer}>
+          <span className={styles.client}>{data.client}</span>
+          <span className={styles.arrow}>
+            <ArrowSmall />
+          </span>
         </div>
-        {/* <TextInView styles={styles.description} color={data.colorBG}> */}
-        <div className={styles.description} style={{ backgroundColor: data.colorBG + "CC" }}>
-          <div className={styles.clientContainer}>
-            <span className={styles.client}>{data.client}</span>
-            <span className={styles.arrow}>
-              <ArrowSmall />
-            </span>
-          </div>
-          <h3 className={styles.title}>{data.title}</h3>
-        </div>
-
-        {/* </TextInView> */}
-      </TransitionLink>
-    </div>
+        <h3 className={styles.title}>{data.title}</h3>
+      </div>
+    </TransitionLink>
   );
 }

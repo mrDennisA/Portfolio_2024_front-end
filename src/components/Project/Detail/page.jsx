@@ -1,6 +1,6 @@
 //Components
 import Introduction from "@/components/Introduction/page";
-import ScrollinView from "@/components/FramerMotion/ScrollInView/page";
+import { ScrollInView } from "@/components/FramerMotion/ScrollInView/page";
 import ImageLoader from "@/components/ImageLoader/page";
 
 //Styles
@@ -18,9 +18,9 @@ export default function Detail({ data }) {
         ) : (
           <section key={index} className={styles[item.type]}>
             {item.img.map((img, index2) => (
-              <ScrollinView key={index2}>
+              <ScrollInView key={index2}>
                 <ImageLoader data={img} />
-              </ScrollinView>
+              </ScrollInView>
             ))}
           </section>
         )

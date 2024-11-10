@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-export default function Parallax({ children, type = null, styles }) {
+export function Parallax({ children, type = null, ...props }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -15,7 +15,7 @@ export default function Parallax({ children, type = null, styles }) {
 
   if (type === "background") {
     return (
-      <motion.div ref={ref} className={styles} style={{ y: backgroundYProgress }}>
+      <motion.div ref={ref} {...props} style={{ y: backgroundYProgress }}>
         {children}
       </motion.div>
     );
@@ -23,9 +23,31 @@ export default function Parallax({ children, type = null, styles }) {
 
   if (type === "text") {
     return (
-      <motion.div ref={ref} className={styles} style={{ y: textYProgress }}>
+      <motion.div ref={ref} {...props} style={{ y: textYProgress }}>
         {children}
       </motion.div>
     );
   }
+}
+
+export function CardParallax({ children, ...props }) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  const transformYProgress = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
+
+  return (
+    <motion.div
+      ref={ref}
+      {...props}
+      style={{
+        y: transformYProgress,
+      }}
+    >
+      {children}
+    </motion.div>
+  );
 }
