@@ -19,7 +19,7 @@ export const TransitionLink = ({ children, href = "", color, ...props }) => {
 
   const handleTransition = async (e) => {
     e.preventDefault();
-    const body = document.querySelector("body");
+    // const body = document.querySelector("body");
     // body.style.backgroundColor = color;
     // body?.classList.add("page-transition");
     // await wait(time);
@@ -28,7 +28,7 @@ export const TransitionLink = ({ children, href = "", color, ...props }) => {
     router.push(href);
     lenis.start();
 
-    body.style.backgroundColor = color;
+    // body.style.backgroundColor = color;
     // await wait(time);
     // body?.classList.remove("page-transition");
   };

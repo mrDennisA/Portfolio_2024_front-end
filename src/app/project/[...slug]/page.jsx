@@ -1,10 +1,7 @@
-import { Suspense } from "react";
-
 // Components
 import { ThemeToggle } from "@/context/themeContext";
 import Banner from "@/components/Banner/page";
 import Detail from "@/components/Project/Detail/page";
-import LoadingScreen from "@/components/LoadingScreen/page";
 
 // API
 import { PROJECTS_URL } from "@/constants/api";
