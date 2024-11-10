@@ -47,7 +47,7 @@ export default async function Project({ params }) {
     <>
       {/* <ThemeToggle data={data.colorBG}> */}
       {/* <LoadingScreen /> */}
-      <Banner data={data} />
+      <Banner data={data} transition={true} />
       <Detail data={data.detail} />
       {/* </ThemeToggle> */}
     </>

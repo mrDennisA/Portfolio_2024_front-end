@@ -18,9 +18,9 @@ export default function Detail({ data }) {
         ) : (
           <section key={index} className={styles[item.type]}>
             {item.img.map((img, index2) => (
-              <ScrollInView key={index2}>
-                <ImageLoader data={img} />
-              </ScrollInView>
+              // <ScrollInView key={index2}>
+              <ImageLoader key={index2} data={img} />
+              // </ScrollInView>
             ))}
           </section>
         )
