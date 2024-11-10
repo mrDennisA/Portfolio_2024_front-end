@@ -15,7 +15,7 @@ export default async function ImageLoader({ data, loading, ...props }) {
       width={width}
       height={height}
       loading={loading}
-      quality={100}
+      quality={85}
       sizes="(max-width: 1280px)100vw"
       style={{ width: "100%", height: "100%", objectFit: "cover" }}
     />

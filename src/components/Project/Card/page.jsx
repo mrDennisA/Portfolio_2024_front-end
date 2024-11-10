@@ -7,9 +7,6 @@ import { TransitionLink } from "@/components/TransitionLink/page";
 
 // Styles
 import styles from "./card.module.css";
-import { HoverTilt } from "@/components/FramerMotion/page";
-import { CardParallax } from "@/components/FramerMotion/Parallax/page";
-import { CardInView } from "@/components/FramerMotion/ScrollInView/page";
 import ImageLoader from "@/components/ImageLoader/page";
 import { ArrowSmall } from "@/components/Icons/page";
 
@@ -23,12 +20,12 @@ export default async function Card({ data }) {
       <div className={styles.imgContainer}>
         <ImageLoader data={data.imgCard} />
       </div>
-      <div className={styles.description} style={{ backgroundColor: data.colorBG + "CC" }}>
+      <div className={styles.description}>
         <div className={styles.clientContainer}>
           <span className={styles.client}>{data.client}</span>
-          <span className={styles.arrow}>
+          {/* <span className={styles.arrow}>
             <ArrowSmall />
-          </span>
+          </span> */}
         </div>
         <h3 className={styles.title}>{data.title}</h3>
       </div>
