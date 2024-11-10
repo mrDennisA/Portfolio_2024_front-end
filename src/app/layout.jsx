@@ -6,8 +6,8 @@ import Footer from "@/components/Footer/page";
 import ThemeContextProvider from "@/context/themeContext";
 
 //Utils
-import { roboto, robotoCondensed } from "@/util/fonts";
-import SmoothScrolling from "@/util/lenis";
+import { roboto, robotoCondensed } from "@/utils/fonts";
+import SmoothScrolling from "@/utils/lenis";
 
 // Styles
 import "../styles/globals.css";

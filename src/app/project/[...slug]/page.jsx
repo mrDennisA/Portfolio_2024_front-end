@@ -8,7 +8,7 @@ import LoadingScreen from "@/components/LoadingScreen/page";
 
 // API
 import { PROJECTS_URL } from "@/constants/api";
-import { revalidate } from "@/util/revalidate";
+import { revalidate } from "@/utils/revalidate";
 
 //GetParams
 export async function generateStaticParams() {

@@ -8,7 +8,7 @@ import Info from "@/components/Info/page";
 
 // API
 import { HOME_URL, PROJECTS_URL } from "@/constants/api";
-import { revalidate } from "@/util/revalidate";
+import { revalidate } from "@/utils/revalidate";
 
 // GetData
 async function getHomeData() {

@@ -62,15 +62,16 @@ export default function Info({ data }) {
 
   return (
     <>
-      <ScrollInView>
-        <List data={data.expertise} />
-      </ScrollInView>
-      <ScrollInView>
-        <Table data={data.experience} theme="themeLight" />
-      </ScrollInView>
-      <ScrollInView>
-        <Table data={data.education} />
-      </ScrollInView>
+      {/* <ScrollInView> */}
+      <List data={data.expertise} />
+      {/* </ScrollInView> */}
+      {/* <ScrollInView> */}
+
+      <Table data={data.experience} theme="themeLight" />
+      {/* </ScrollInView> */}
+      {/* <ScrollInView> */}
+      <Table data={data.education} />
+      {/* </ScrollInView> */}
     </>
   );
 }

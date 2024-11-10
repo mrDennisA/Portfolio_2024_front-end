@@ -7,7 +7,7 @@ import styles from "./list.module.css";
 
 // API
 import { PROJECTS_URL } from "@/constants/api";
-import { revalidate } from "@/util/revalidate";
+import { revalidate } from "@/utils/revalidate";
 
 // // GetData
 // async function getData() {

@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 
 //Contexts
 import { AppContext } from "@/context/context";
-import wait from "@/util/wait";
+import wait from "@/utils/wait";
 
 //Util
 

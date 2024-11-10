@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 
-// Render
-export default function ImageAnimate({ data, loading, transition = false, ...props }) {
+// Image Transition
+export default function ImageTransition({ data, loading, transition = false, ...props }) {
   const [imgLoading, setImgLoading] = useState(true);
   const { url, alt, width, height } = data;
 

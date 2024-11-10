@@ -1,11 +1,12 @@
 //Components
-import { Parallax } from "@/components/FramerMotion/Parallax/page";
+import Parallax from "./parallax";
+import ImageLoader from "@/components/ImageLoader/page";
 import Title from "@/components/Text/Title/page";
 
 // Styles
 import styles from "./banner.module.css";
-import ImageLoader from "../ImageLoader/page";
 
+//Render
 export default function Banner({ data, transition }) {
   return (
     <section className={styles.container}>
