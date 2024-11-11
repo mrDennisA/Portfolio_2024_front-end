@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 const ThemeContext = createContext();
 
 export default function ThemeContextProvider({ children }) {
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useState("#1C1C20");
   const value = { theme, setTheme };
 
   const pathname = usePathname();

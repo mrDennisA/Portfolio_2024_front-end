@@ -16,7 +16,7 @@ export default function Banner({ data, transition }) {
       <Parallax type="text" className={styles.parallax}>
         <Title data={data} />
       </Parallax>
-      {data.imgBanner[1] && <ImageLoader className={styles.img} data={data.imgBanner[1]} transition={transition} loading={"eager"} />}
+      {data.imgBanner[1] && <ImageLoader className={styles.img} data={data.imgBanner[1]} loading={"eager"} />}
     </section>
   );
 }

@@ -3,7 +3,7 @@ import { ThemeToggle } from "@/context/themeContext";
 import Banner from "@/components/Banner/page";
 import Introduction from "@/components/Introduction/page";
 import Contact from "@/components/Contact/page";
-import ProjectList from "../components/Project/List/page";
+import ProjectList from "@/components/Project/List/page";
 import Info from "@/components/Info/page";
 
 // API
@@ -42,7 +42,7 @@ export default async function Home() {
   return (
     <>
       <ThemeToggle data={homePromise.colorBG}>
-        <Banner data={homeData} />
+        <Banner data={homeData} transition="home" />
         <Introduction data={homeData.detail} />
         <Contact data={homeData.contact} />
         <ProjectList data={projectsData} />

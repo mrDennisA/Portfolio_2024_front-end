@@ -8,6 +8,17 @@ export default function ImageTransition({ data, loading, transition = null, ...p
   const [imgLoading, setImgLoading] = useState(true);
   const { url, alt, width, height } = data;
 
+  const styles = () => {
+    if (transition === "home") {
+      return {
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+        opacity: imgLoading ? 0 : 1,
+        transition: "opacity 2s ease 0.3s",
+      };
+    }
+  };
   if (transition === "home") {
     return (
       <Image
