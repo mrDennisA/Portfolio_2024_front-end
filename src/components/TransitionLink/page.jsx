@@ -5,7 +5,7 @@ import React, { useContext } from "react";
 import { useRouter } from "next/navigation";
 
 //Contexts
-import { AppContext } from "@/context/context";
+import { LenisContext } from "@/utils/lenis";
 import wait from "@/utils/wait";
 
 //Util
@@ -15,7 +15,7 @@ const time = 150;
 
 export const TransitionLink = ({ children, href = "", color, ...props }) => {
   const router = useRouter();
-  const lenis = useContext(AppContext);
+  const lenis = useContext(LenisContext);
 
   const handleTransition = async (e) => {
     e.preventDefault();
@@ -42,7 +42,7 @@ export const TransitionLink = ({ children, href = "", color, ...props }) => {
 
 export const TransitionBack = ({ children, href = "", ...props }) => {
   const router = useRouter();
-  const lenis = useContext(AppContext);
+  const lenis = useContext(LenisContext);
 
   const handleTransition = async (e) => {
     e.preventDefault();

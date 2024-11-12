@@ -1,10 +1,10 @@
 // Component
 import Header from "../components/Header/page";
 import Footer from "@/components/Footer/page";
-import ThemeContextProvider from "@/context/themeContext";
+import ThemeContextProvider from "@/utils/theme";
 
 //Utils
-import { roboto, robotoCondensed } from "@/utils/fonts";
+import { roboto, robotoCondensed, dmSerifDisplay } from "@/utils/fonts";
 import SmoothScrolling from "@/utils/lenis";
 
 // Styles
@@ -17,7 +17,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${roboto.variable} ${robotoCondensed.variable}`}>
+    <html lang="en" className={`${roboto.variable} ${robotoCondensed.variable} ${dmSerifDisplay.variable}`}>
       <SmoothScrolling>
         <ThemeContextProvider>
           {/* <body> */}

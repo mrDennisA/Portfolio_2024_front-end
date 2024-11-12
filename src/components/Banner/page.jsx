@@ -10,7 +10,7 @@ import styles from "./banner.module.css";
 export default function Banner({ data, transition }) {
   return (
     <section className={styles.container}>
-      <Parallax type="background" className={styles.parallax}>
+      <Parallax type="background">
         <ImageLoader data={data.imgBanner[0]} transition={transition} loading={"eager"} />
       </Parallax>
       <Parallax type="text" className={styles.parallax}>

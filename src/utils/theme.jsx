@@ -6,14 +6,14 @@ import { usePathname } from "next/navigation";
 const ThemeContext = createContext();
 
 export default function ThemeContextProvider({ children }) {
-  const [theme, setTheme] = useState("#1C1C20");
+  const [theme, setTheme] = useState("");
   const value = { theme, setTheme };
 
   const pathname = usePathname();
 
   useEffect(() => {
     if (pathname === "/") {
-      setTheme(() => "#1C1C20");
+      setTheme(() => "#1C1B20");
     }
   });
 
@@ -28,7 +28,7 @@ export function ThemeToggle({ children, data }) {
   const { theme, setTheme } = useContext(ThemeContext);
 
   useEffect(() => {
-    setTheme(data);
+    setTheme(() => data);
   });
 
   return children;

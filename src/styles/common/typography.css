@@ -1,27 +1,19 @@
-/* @import "./robotoFont.css";
-@import "./robotoCondensedFont.css"; */
-
-:root {
-  /* --font: "Roboto", sans-serif; */
-  /* --fontCondensed: "Roboto Condensed", sans-serif; */
-}
-
 html {
   font-family: var(--font-roboto);
 }
 
 h1,
 h1 * {
-  font-size: clamp(3rem, 1.2rem + 6vw, 6rem);
-  line-height: clamp(3rem, 1.2rem + 6vw, 6rem);
   font-weight: 700;
+  font-size: clamp(2.75rem, 2.083rem + 2.222vw, 3.75rem);
+  line-height: clamp(3rem, 2.4rem + 2vw, 4rem);
 }
 
 h2,
 .h2 {
-  font-weight: 100;
-  font-size: clamp(1.5rem, 0.9rem + 2vw, 2.5rem);
-  line-height: clamp(2rem, 1.4rem + 2vw, 3rem);
+  font-family: var(--font-robotoCondensed);
+  font-weight: 200;
+  font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem);
 }
 
 h3,
@@ -44,6 +36,15 @@ td span {
   font-size: clamp(1.125rem, 0.975rem + 0.5vw, 1.375rem);
   line-height: clamp(1.625rem, 1.175rem + 1.5vw, 2.375rem);
   font-weight: 400;
+}
+
+.quote {
+  font-family: var(--font-dmSerifDisplay);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: clamp(1.75rem, 1.15rem + 2vw, 2.75rem);
+  line-height: clamp(2.25rem, 1.65rem + 2vw, 3.25rem);
 }
 
 @media only screen and (min-width: 768px) {

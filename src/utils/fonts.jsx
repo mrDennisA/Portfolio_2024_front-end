@@ -77,3 +77,15 @@ export const robotoCondensed = localFont({
   ],
   variable: "--font-robotoCondensed",
 });
+
+export const dmSerifDisplay = localFont({
+  src: [
+    {
+      path: "../../public/fonts/DMSerifDisplay-Regular.ttf",
+      style: "normal",
+      weight: "400",
+      display: "swap",
+    },
+  ],
+  variable: "--font-dmSerifDisplay",
+});

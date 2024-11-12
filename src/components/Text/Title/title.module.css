@@ -1,4 +1,7 @@
 .title {
+  position: absolute;
+  top: 50%;
+
   display: flex;
   flex-direction: column;
   padding: 0 var(--padding);
@@ -15,13 +18,21 @@
   flex-direction: row;
 }
 
-h1.words {
-  max-width: 50%;
+@media only screen and (min-width: 768px) {
+  h1.words {
+    max-width: calc((100% / 3) * 2);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h1.words {
+    /* max-width: calc((100% / 3) * 2); */
+    max-width: 50%;
+  }
 }
 
 .client {
   font-family: var(--font-robotoCondensed);
-  font-style: italic;
-  font-weight: 100;
-  font-size: clamp(1.5rem, 0.9rem + 2vw, 2.5rem);
+  font-weight: 200;
+  font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem);
 }

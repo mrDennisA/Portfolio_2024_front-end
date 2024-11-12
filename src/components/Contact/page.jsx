@@ -34,7 +34,7 @@ export default function Contact({ data }) {
 
   return (
     <section className={styles.section}>
-      <h2 ref={ref} className={styles.title}>
+      <div ref={ref} className="quote">
         {words.map((word, index) => {
           const start = index / words.length;
           const end = start + 1 / words.length;
@@ -45,7 +45,7 @@ export default function Contact({ data }) {
             </Word>
           );
         })}
-      </h2>
+      </div>
       <div className={styles.contactLink}>
         {data.links.map((item, index) => {
           const start = index / words.length;
