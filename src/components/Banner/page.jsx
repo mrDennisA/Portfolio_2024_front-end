@@ -7,11 +7,11 @@ import Title from "@/components/Text/Title/page";
 import styles from "./banner.module.css";
 
 //Render
-export default function Banner({ data, transition }) {
+export default function Banner({ data, type }) {
   return (
     <section className={styles.container}>
       <Parallax type="background">
-        <ImageLoader data={data.imgBanner[0]} transition={transition} loading={"eager"} />
+        <ImageLoader data={data.imgBanner[0]} type={type} loading={"eager"} />
       </Parallax>
       <Parallax type="text" className={styles.parallax}>
         <Title data={data} />

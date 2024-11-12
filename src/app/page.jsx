@@ -42,7 +42,7 @@ export default async function Home() {
   return (
     <>
       <ThemeToggle data={homePromise.colorBG}>
-        <Banner data={homeData} transition="home" />
+        <Banner data={homeData} type="home" />
         <Introduction data={homeData.detail} />
         <Contact data={homeData.contact} />
         <ProjectList data={projectsData} />

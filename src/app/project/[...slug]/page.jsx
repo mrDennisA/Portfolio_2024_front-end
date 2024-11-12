@@ -43,7 +43,7 @@ export default async function Project({ params }) {
   return (
     <>
       <ThemeToggle data={data.colorBG}>
-        <Banner data={data} transition="project" />
+        <Banner data={data} type="project" />
         <Detail data={data.detail} />
       </ThemeToggle>
     </>
