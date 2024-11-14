@@ -43,8 +43,8 @@ export default async function Project({ params }) {
   return (
     <>
       <ThemeToggle data={data.colorBG}>
-        <Banner data={data} type="project" />
-        <Detail data={data} />
+        {/* <Banner data={data} type="project" />
+        <Detail data={data} /> */}
       </ThemeToggle>
     </>
   );
