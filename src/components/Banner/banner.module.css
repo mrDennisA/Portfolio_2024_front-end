@@ -1,6 +1,7 @@
 .container {
   position: relative;
   overflow: hidden;
+
   display: grid;
 
   height: 50vh;
@@ -19,8 +20,8 @@
 
 .img {
   position: absolute;
-  bottom: 0;
-  height: calc(100% + 2px);
+
+  height: calc(100%);
   width: calc(100% + 2px);
 }
 
