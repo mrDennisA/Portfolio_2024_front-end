@@ -21,7 +21,7 @@
 .img {
   position: absolute;
 
-  height: calc(100%);
+  height: calc(100% + 2px);
   width: calc(100% + 2px);
 }
 
