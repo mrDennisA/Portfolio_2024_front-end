@@ -2,6 +2,7 @@
   position: relative;
   overflow: hidden;
   display: grid;
+
   height: 50vh;
 
   /* Layout */
@@ -18,6 +19,9 @@
 
 .img {
   position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: calc(100% + 2px);
 }
 
 @media only screen and (min-width: 576px) {

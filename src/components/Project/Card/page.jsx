@@ -1,34 +1,31 @@
-import Image from "next/image";
-
 //Components
+import { MouseHover } from "./card-utils";
 import { TransitionLink } from "@/components/TransitionLink/page";
-
-//URL
 
 // Styles
 import styles from "./card.module.css";
-import ImageLoader from "@/components/ImageLoader/page";
-import { ArrowSmall } from "@/components/Icons/page";
 
 // Render
-export default async function Card({ data }) {
+export default function Card({ index, data }) {
   const slug = data.slugClient + "/" + data.slugTitle;
-  // console.log(data.colorBG);
+  const number = index + 1;
 
   return (
-    <TransitionLink className={styles.container} href={"/project/" + slug} color={data.colorBG}>
-      <div className={styles.imgContainer}>
-        <ImageLoader data={data.imgCard} />
-      </div>
-      <div className={styles.description}>
-        <div className={styles.clientContainer}>
-          <span className={styles.client}>{data.client}</span>
-          {/* <span className={styles.arrow}>
-            <ArrowSmall />
-          </span> */}
-        </div>
-        <h3 className={styles.title}>{data.title}</h3>
-      </div>
-    </TransitionLink>
+    <>
+      <TransitionLink href={"/project/" + slug} color={data.colorBG}>
+        <MouseHover className={styles.container} color={data.colorBG}>
+          <div className={styles.number}>{number.toString().padStart(2, "0")}</div>
+          <div className={styles.description}>
+            <div className={`h2 ${styles.client}`}>{data.client}</div>
+            <h4 className={styles.title}>{data.title}</h4>
+          </div>
+          <div className={styles.service}>
+            {data.detail[0].service.map((item, index) => (
+              <span key={index}>{item}</span>
+            ))}
+          </div>
+        </MouseHover>
+      </TransitionLink>
+    </>
   );
 }

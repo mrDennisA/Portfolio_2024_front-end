@@ -41,7 +41,7 @@ export default async function Home() {
 
   return (
     <>
-      <ThemeToggle data={homePromise.colorBG}>
+      <ThemeToggle data={homeData.colorBG}>
         <Banner data={homeData} type="home" />
         <Introduction data={homeData.detail} />
         <Contact data={homeData.contact} />

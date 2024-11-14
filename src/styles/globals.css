@@ -2,11 +2,13 @@
 
 :root {
   --textColorLight: rgb(255, 255, 255);
+  --textColorGray: hsla(0, 0%, 100%, 60%);
   --textColorDark: rgb(0, 0, 0);
 
   --bgColorLight: rgb(224, 224, 228);
+  --bgColorGray: hsla(0, 0%, 100%, 0.8);
   --bgColorDark: rgb(28, 27, 32);
-  /* --bgColorDark: rgb(28, 28, 32); */
+  /* --bgColorDark: #1c1b20; */
 
   --buttonColor: rgb(28, 27, 32, 0.4);
   --buttonColorHover: rgba(28, 27, 32, 0.3);
@@ -103,3 +105,11 @@ html.lenis body {
 /* * {
   box-shadow: 0px 0px 0px 1px hsla(180, 100%, 20%, 0.5) inset;
 } */
+
+/* Your primary input mechanism is a finger*/
+@media (pointer: coarse) {
+}
+
+/* Your primary input mechanism is a mouse*/
+@media (pointer: fine) {
+}

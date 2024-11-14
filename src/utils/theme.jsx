@@ -3,19 +3,29 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
+//Util
+import { LenisContext } from "@/utils/lenis";
+
 const ThemeContext = createContext();
+
+export const colorBG = "#1C1B20";
 
 export default function ThemeContextProvider({ children }) {
   const [theme, setTheme] = useState("");
   const value = { theme, setTheme };
 
   const pathname = usePathname();
+  const lenis = useContext(LenisContext);
 
   useEffect(() => {
-    if (pathname === "/") {
-      setTheme(() => "#1C1B20");
+    if (lenis) {
+      lenis.stop();
+      lenis.start();
     }
-  });
+    if (pathname === "/") {
+      setTheme(() => colorBG);
+    }
+  }, [pathname]);
 
   return (
     <ThemeContext.Provider value={value}>

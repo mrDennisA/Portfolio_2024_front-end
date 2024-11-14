@@ -24,7 +24,7 @@
     "detail": [
       {
         "name": "text",
-        "title": "Front-End",
+        "service": ["UI/UX Design", "Website"],
         "description": [
           "For my first-semester project, I was tasked with creating a kid-friendly website for a science museum. The website featured information about various exhibitions, upcoming events, and general details about the museum.",
           "Designs, style tile and low/high-fidelity wireframes were all done in Adobe XP. Front-end was coded using HTML and CSS."
@@ -81,7 +81,7 @@
     "detail": [
       {
         "name": "text",
-        "title": "Front-End",
+        "service": ["UI/UX Design", "Website"],
         "description": [
           "The Cross-Course project was completed in two phases. In the first phase, we developed a style tile and designed both low and high-fidelity wireframes. We then built the website using newly introduced HTML and CSS techniques.",
           "The second phase took place later in the semester, after we were introduced to JavaScript and WordPress CMS for Back-End. During this phase, we had to rewrite the project, incorporating these new tools and technologies."
@@ -142,7 +142,7 @@
     "detail": [
       {
         "name": "text",
-        "title": "Front-End",
+        "service": ["UI/UX Design", "Website"],
         "description": [
           "For my first semester exam, we were assigned the task of building a blog site using WordPress as the backend CMS. This enabled us to create, update, and delete blog posts seamlessly.",
           "Designs, style tile and high fidelity prototype were all done in Adobe XP. Front-end was coded using HTML , Vanilla JavaScript. Back-end was made using Wordpress CMS."
@@ -207,7 +207,7 @@
     "detail": [
       {
         "name": "text",
-        "title": "Front-End",
+        "service": ["UI/UX Design", "Website"],
         "description": [
           "For my second semester project, I chose the Interior Decor eCommursis store. The main assignment was to develop a fully functional checkout basket for the online store.",
           "Designs, style tile and high fidelity prototype were all done in Adobe XP. Front-end was coded using HTML , Vanilla JavaScript and Sass for styling. Back-end was made using Strapi. Hosted on Heroku and Cloudinary for media storage."
@@ -280,7 +280,7 @@
     "detail": [
       {
         "name": "text",
-        "title": "Front-End",
+        "service": ["UI/UX Design", "Website"],
         "description": [
           "For my last semester exam, I chose VOKE, a Hair Extension and Haircare brand, as the real-world client. Having previously worked with the brand on various graphical elements, it felt like a natural and convenient choice to work with them for this semester exam.",
           "Designs, style tile and high fidelity prototype were all done in Adobe XP. Front-end was coded on React framework. Back-end was made using Strapi. Hosted on Heroku and Cloudinary for media storage."
@@ -357,7 +357,7 @@
     "detail": [
       {
         "name": "text",
-        "title": "Packaging Design",
+        "service": ["Packaging Design"],
         "description": [
           "Design a new, simple, masculine Christmas gift box using only the existing color palette.",
           "The outer packaging features angled gold foil stripes resembling a fir tree. The brand logo is placed above one of the trees, symbolizing a star."
@@ -414,9 +414,9 @@
     "detail": [
       {
         "name": "text",
-        "title": "Packaging Design",
+        "service": ["Packaging Design", "3D Packshots", "Digital Marketing"],
         "description": [
-          "Design new Christmas giftset 2023/24. Create Marketing Materials. 3D packshot and Ads.",
+          "Design new Christmas giftset 2023/24.",
           "Outer Packaging features a golde cloudberry pattern, creating a warm and seasonal aesthetic. The cloudberry design will enhance the holiday spirit with its natural and elegant appeal.",
           "The set includes five distinct sleeves, each in the base colors of the products they represent. These sleeves will provide a visual connection to the products inside, offering a cohesive and appealing design while maintaining clear differentiation between each item."
         ]
@@ -476,11 +476,10 @@
     "detail": [
       {
         "name": "text",
-        "title": "Product Design",
+        "service": ["Product Design", "3D Packshots", "Digital Marketing"],
         "description": [
           "Update the existing product with a fresh design to create a distinctive Limited Edition version. ",
-          "The redesign is featuring a fresh ocean wave pattern, adding a dynamic and unique aesthetic to the product. The existing color palette is maintained, ensuring brand recognition and consistency. One additional accent color is introduced for the new title, highlighting the limited edition status while complementing the new ocean wave design.",
-          "Create Marketing Materials. 3D packshot and Ads."
+          "The redesign is featuring a fresh ocean wave pattern, adding a dynamic and unique aesthetic to the product. The existing color palette is maintained, ensuring brand recognition and consistency. One additional accent color is introduced for the new title, highlighting the limited edition status while complementing the new ocean wave design."
         ]
       },
       {
@@ -538,10 +537,9 @@
     "detail": [
       {
         "name": "text",
-        "title": "Product Design",
+        "service": ["Product Design", "3D Packshots", "Digital Marketing", "Display", "Print"],
         "description": [
-          "Redesign New Skincare Collection. Develop fresh and modern color palettes that reflect the brand’s identity and appeal to the target audience. Redesign navigation elements and icons for a seamless and intuitive user experience, aligning with the new visual style. Design all necessary artworks and ensure they are print-ready, maintaining high-quality standards for production.",
-          "Create Marketing Materials. 3D packshots, Ads, Product displays and posters."
+          "Redesign New Skincare Collection. Develop fresh and modern color palettes that reflect the brand’s identity and appeal to the target audience. Redesign navigation elements and icons for a seamless and intuitive user experience, aligning with the new visual style. Design all necessary artworks and ensure they are print-ready, maintaining high-quality standards for production."
         ]
       },
       {

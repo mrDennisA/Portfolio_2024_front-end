@@ -4,7 +4,7 @@ import Footer from "@/components/Footer/page";
 import ThemeContextProvider from "@/utils/theme";
 
 //Utils
-import { roboto, robotoCondensed, dmSerifDisplay } from "@/utils/fonts";
+import { roboto, robotoCondensed, dmSerifDisplay, graphik } from "@/utils/fonts";
 import SmoothScrolling from "@/utils/lenis";
 
 // Styles
@@ -17,7 +17,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${roboto.variable} ${robotoCondensed.variable} ${dmSerifDisplay.variable}`}>
+    <html lang="en" className={`${dmSerifDisplay.variable} ${graphik.variable}`}>
       <SmoothScrolling>
         <ThemeContextProvider>
           {/* <body> */}

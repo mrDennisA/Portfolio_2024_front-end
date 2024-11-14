@@ -9,16 +9,10 @@
       "alt": "Banner Background",
       "width": 1280,
       "height": 720
-    },
-    {
-      "url": "/img/banner_home_front.png",
-      "alt": "Banner Foreground",
-      "width": 1280,
-      "height": 720
     }
   ],
   "detail": {
-    "title": "Hello!",
+    "title": ["Introduction"],
     "description": [
       "My name is Dennis Alekseev, i am a 3D and Graphic designer with 20 years of experience in the field.",
       "I have held several different roles in a variety of environments, designing for a wide range of mediums including web and UX design, 3D visualization, product design, print, photography, animation, advertising, social media, and digital marketing."

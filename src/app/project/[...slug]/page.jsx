@@ -44,7 +44,7 @@ export default async function Project({ params }) {
     <>
       <ThemeToggle data={data.colorBG}>
         <Banner data={data} type="project" />
-        <Detail data={data.detail} />
+        <Detail data={data} />
       </ThemeToggle>
     </>
   );

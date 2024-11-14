@@ -44,7 +44,7 @@ export default function Title({ data }) {
       <motion.div className={styles.words} variants={clientPerantVariants} initial="initial" animate="animate">
         {clientWords.map((word, index) => {
           return (
-            <motion.span key={index} className="h2" variants={childVariants} style={{ marginRight: "0.5rem" }}>
+            <motion.span key={index} className="h3" variants={childVariants} style={{ marginRight: "0.5rem" }}>
               {word}
             </motion.span>
           );

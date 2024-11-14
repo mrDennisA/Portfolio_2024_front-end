@@ -27,10 +27,13 @@ export default async function ProjectList({ data }) {
 
   return (
     <section className={styles.section}>
+      <h3 className={styles.title}>Works</h3>
       {/* <ScrollHorizontal> */}
-      {data.map((item, index) => {
-        return <Card key={index} data={item} />;
-      })}
+      <div className={styles.container}>
+        {data.map((item, index) => {
+          return <Card key={index} index={index} data={item} />;
+        })}
+      </div>
       {/* </ScrollHorizontal> */}
     </section>
   );

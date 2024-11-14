@@ -8,11 +8,9 @@ import styles from "./detail.module.css";
 
 // Render
 export default function Detail({ data }) {
-  // console.log(data);
-
   return (
     <>
-      {data.map((item, index) =>
+      {data.detail.map((item, index) =>
         item.name === "text" ? (
           <Introduction key={index} data={item} />
         ) : (

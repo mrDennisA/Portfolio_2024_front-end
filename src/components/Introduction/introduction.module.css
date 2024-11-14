@@ -1,4 +1,7 @@
 .section {
+}
+
+.container {
   display: grid;
   gap: var(--gap);
   padding: var(--divider) var(--padding);
@@ -8,8 +11,44 @@
   max-width: var(--xl);
 }
 
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(4px, 1.6px + 0.5vw, 8px);
+  color: var(--textColorGray);
+}
+
+.service span {
+  display: inline-flex;
+  text-wrap: nowrap;
+  gap: clamp(4px, 1.6px + 0.5vw, 8px);
+}
+
+.service span:not(:last-child)::after {
+  content: "-";
+}
+
+.paragraph {
+  display: grid;
+  gap: var(--gap);
+}
+
 @media only screen and (min-width: 768px) {
-  .section {
+  .container {
     grid-template-columns: 1fr 3fr;
+  }
+
+  .service {
+    flex-direction: column;
+    gap: unset;
+  }
+
+  .service span {
+    text-wrap: unset;
+    gap: unset;
+  }
+
+  .service span:not(:last-child)::after {
+    content: unset;
   }
 }

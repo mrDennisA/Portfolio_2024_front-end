@@ -11,7 +11,14 @@ export default function SmoothScrolling({ children }) {
 
   return (
     <LenisContext.Provider value={lenis}>
-      <ReactLenis root options={{ lerp: 0.05, wheelMultiplier: 1, smoothTouch: true }}>
+      <ReactLenis
+        root
+        options={{
+          lerp: 0.05,
+          wheelMultiplier: 1,
+          smoothTouch: true,
+        }}
+      >
         {children}
       </ReactLenis>
     </LenisContext.Provider>

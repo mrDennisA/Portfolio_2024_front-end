@@ -1,0 +1,25 @@
+.section {
+  display: grid;
+  padding: var(--divider) var(--padding);
+
+  /* grid-template-columns: 1fr; */
+  /* gap: var(--padding) var(--gap); */
+
+  /* Layout */
+  width: 100%;
+  margin: 0 auto;
+  max-width: var(--xl);
+}
+
+/* @media only screen and (min-width: 576px) {
+  .section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+  }
+} */
+
+/* @media only screen and (min-width: 992px) {
+  .section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} */

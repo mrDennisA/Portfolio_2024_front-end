@@ -7,7 +7,7 @@ export default function Info({ data }) {
   const List = ({ data, theme = "" }) => {
     return (
       <section className={styles.listContainer + " " + theme}>
-        <h3 className="h2">{data.title}</h3>
+        <h3 className="">{data.title}</h3>
         <div className={styles.listPosition}>
           <div></div>
           <div className={styles.listItem}>
@@ -33,7 +33,7 @@ export default function Info({ data }) {
   const Table = ({ data, theme = "" }) => {
     return (
       <section className={styles.listContainer + " " + theme}>
-        <h3 className="h2">{data.title}</h3>
+        <h3 className="">{data.title}</h3>
         <table className={styles.table}>
           <tbody className={styles.tableBody}>
             {data.list
@@ -42,13 +42,13 @@ export default function Info({ data }) {
               .map((item, index) => {
                 return (
                   <tr key={index} className={styles.tableRow}>
-                    <td className={styles.tableCell}>
+                    <td className={`pHeight ${styles.tableCell}`}>
                       <span>{item.fromDate}</span>
                       <span>{" - "}</span>
                       <span>{item.toDate}</span>
                     </td>
                     <td className={styles.tableCell}>
-                      <span>{item.title}</span>
+                      <span className="p">{item.title}</span>
                       <h4>{item.description}</h4>
                     </td>
                   </tr>

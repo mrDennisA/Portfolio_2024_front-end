@@ -13,7 +13,7 @@ export default function ImageTransition({ data, loading, type = "img", ...props 
     height: "100%",
     objectFit: "cover",
     opacity: imgLoading ? 0 : 1,
-    transition: "opacity 0.3s",
+    transition: "opacity .3s ease",
   };
 
   const styleHome = {

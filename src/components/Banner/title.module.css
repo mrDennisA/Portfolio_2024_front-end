@@ -18,21 +18,15 @@
   flex-direction: row;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   h1.words {
-    max-width: calc((100% / 3) * 2);
+    width: calc((100% / 3) * 2);
   }
 }
 
 @media only screen and (min-width: 992px) {
   h1.words {
-    /* max-width: calc((100% / 3) * 2); */
-    max-width: 50%;
+    width: 50%;
+    /* width: calc((100% / 3) * 2); */
   }
-}
-
-.client {
-  font-family: var(--font-robotoCondensed);
-  font-weight: 200;
-  font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem);
 }

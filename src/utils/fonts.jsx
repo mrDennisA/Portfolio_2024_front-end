@@ -89,3 +89,45 @@ export const dmSerifDisplay = localFont({
   ],
   variable: "--font-dmSerifDisplay",
 });
+
+export const graphik = localFont({
+  src: [
+    {
+      path: "../../public/fonts/graphik/Graphik-Bold-Web.woff2",
+      style: "normal",
+      weight: "700",
+      display: "swap",
+    },
+    {
+      path: "../../public/fonts/graphik/Graphik-Medium-Web.woff2",
+      style: "normal",
+      weight: "500",
+      display: "swap",
+    },
+    {
+      path: "../../public/fonts/graphik/Graphik-Regular-Web.woff2",
+      style: "normal",
+      weight: "400",
+      display: "swap",
+    },
+    {
+      path: "../../public/fonts/graphik/Graphik-Light-Web.woff2",
+      style: "normal",
+      weight: "300",
+      display: "swap",
+    },
+    {
+      path: "../../public/fonts/graphik/Graphik-Extralight-Web.woff2",
+      style: "normal",
+      weight: "200",
+      display: "swap",
+    },
+    {
+      path: "../../public/fonts/graphik/Graphik-Thin-Web.woff2",
+      style: "normal",
+      weight: "100",
+      display: "swap",
+    },
+  ],
+  variable: "--font-graphik",
+});
