@@ -20,7 +20,7 @@
 .img {
   position: absolute;
   bottom: 0;
-  height: 100%;
+  height: calc(100% + 2px);
   width: calc(100% + 2px);
 }
 
