@@ -29,7 +29,7 @@ export default function ThemeContextProvider({ children }) {
 
   return (
     <ThemeContext.Provider value={value}>
-      <body style={{ backgroundColor: `${theme}`, transition: "background-color 0.3s ease" }}>{children}</body>
+      <body style={{ backgroundColor: `${theme}`, transition: "background-color 0.6s ease" }}>{children}</body>
     </ThemeContext.Provider>
   );
 }

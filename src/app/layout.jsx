@@ -20,11 +20,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${dmSerifDisplay.variable} ${graphik.variable}`}>
       <SmoothScrolling>
         <ThemeContextProvider>
-          {/* <body> */}
           <Header />
           <main>{children}</main>
           <Footer />
-          {/* </body> */}
         </ThemeContextProvider>
       </SmoothScrolling>
     </html>

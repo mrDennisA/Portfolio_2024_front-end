@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 import { colorBG } from "@/utils/theme";
 
 export function MouseHover({ children, color, ...props }) {
@@ -18,8 +20,13 @@ export function MouseHover({ children, color, ...props }) {
   };
 
   return (
-    <div {...props} onMouseMove={handleMouseOver} onMouseLeave={handleMouseLeave}>
+    <motion.div
+      {...props}
+      whileHover={{ y: ".5rem", transition: { type: "spring", damping: 12, stiffness: 100 } }}
+      onHoverStart={handleMouseOver}
+      onHoverEnd={handleMouseLeave}
+    >
       {children}
-    </div>
+    </motion.div>
   );
 }
