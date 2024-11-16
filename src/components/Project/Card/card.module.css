@@ -22,6 +22,8 @@
   position: absolute;
   left: 0.5rem;
   top: 0.5rem;
+
+  text-shadow: var(--shadow);
 }
 
 /* Info */
@@ -71,7 +73,7 @@
 /* Touch  min-width: 576px */
 @media (pointer: coarse) and (min-width: 576px) {
   .container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 
   .info {
@@ -81,9 +83,6 @@
 
 /* Touch  min-width: 992px*/
 @media (pointer: coarse) and (min-width: 992px) {
-  .container {
-    grid-template-columns: 1fr 2fr;
-  }
 }
 
 /* Mouse min-width: 576px */
