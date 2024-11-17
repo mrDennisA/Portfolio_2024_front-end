@@ -10,7 +10,7 @@ import { ModalToggle } from "@/utils/modal";
 export function MouseHover({ children, index, color, ...props }) {
   const [toggle, setToggle] = useState({ active: false, index: 0 });
 
-  const handleMouseOver = (e) => {
+  const handleMouseEnter = (e) => {
     const body = document.querySelector("body");
     const bannerMask = document.getElementById("bannerMask");
 
@@ -33,7 +33,7 @@ export function MouseHover({ children, index, color, ...props }) {
       <motion.div
         {...props}
         whileHover={{ padding: "1rem 0", transition: { type: "spring" } }}
-        onHoverStart={handleMouseOver}
+        onHoverStart={handleMouseEnter}
         onHoverEnd={handleMouseLeave}
         onMouseEnter={() => setToggle({ active: true, index })}
         onMouseMove={() => setToggle({ active: true, index })}
