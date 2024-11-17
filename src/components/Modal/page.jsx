@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import useMouse from "@/utils/useMouse";
 
 import styles from "./modal.module.css";
+import { lazy } from "react";
 
 export function Modal({ modal, projects }) {
   const { active, index } = modal;
@@ -26,11 +27,14 @@ export function Modal({ modal, projects }) {
         return (
           <div key={modal_index} className={styles.modal} style={{ backgroundColor: item.colorBG }}>
             <Image
-              style={{ opacity: index === modal_index ? 1 : 0, transition: "opacity .3s ease" }}
               src={item.imgCard.url}
-              width={400}
-              height={400}
-              alt="image"
+              alt={item.imgCard.alt}
+              width={540}
+              height={540}
+              quality={85}
+              loading="lazy"
+              sizes="(max-width: 540px)100vw"
+              style={{ width: "100%", height: "100%", objectFit: "cover", opacity: index === modal_index ? 1 : 0, transition: "opacity .3s ease" }}
             />
           </div>
         );
