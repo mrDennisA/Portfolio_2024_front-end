@@ -2,12 +2,19 @@
 
 import { motion } from "framer-motion";
 
+//Componets
 import { colorBG } from "@/utils/theme";
+import { useState } from "react";
+import { ModalToggle } from "@/utils/modal";
 
-export function MouseHover({ children, color, ...props }) {
+export function MouseHover({ children, index, color, ...props }) {
+  const [toggle, setToggle] = useState({ active: false, index: 0 });
+
   const handleMouseOver = (e) => {
     const body = document.querySelector("body");
     const bannerMask = document.getElementById("bannerMask");
+
+    // setToggle(() => ({ active: true, index }));
     body.style.backgroundColor = color;
     bannerMask.style.fill = color;
   };
@@ -15,18 +22,25 @@ export function MouseHover({ children, color, ...props }) {
   const handleMouseLeave = (e) => {
     const body = document.querySelector("body");
     const bannerMask = document.getElementById("bannerMask");
+
+    // setToggle(() => ({ active: false, index }));
     body.style.backgroundColor = colorBG;
     bannerMask.style.fill = colorBG;
   };
 
   return (
-    <motion.div
-      {...props}
-      whileHover={{ y: ".5rem", transition: { type: "spring", damping: 12, stiffness: 100 } }}
-      onHoverStart={handleMouseOver}
-      onHoverEnd={handleMouseLeave}
-    >
-      {children}
-    </motion.div>
+    <ModalToggle toggle={toggle}>
+      <motion.div
+        {...props}
+        whileHover={{ padding: "1rem 0", transition: { type: "spring" } }}
+        onHoverStart={handleMouseOver}
+        onHoverEnd={handleMouseLeave}
+        onMouseEnter={() => setToggle({ active: true, index })}
+        onMouseMove={() => setToggle({ active: true, index })}
+        onMouseLeave={() => setToggle({ active: false, index })}
+      >
+        {children}
+      </motion.div>
+    </ModalToggle>
   );
 }

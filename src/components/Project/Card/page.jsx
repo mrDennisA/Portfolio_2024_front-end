@@ -1,5 +1,5 @@
 //Components
-import { MouseHover } from "./card-utils";
+import { MouseHover, WhileHover } from "./card-utils";
 import { TransitionLink } from "@/components/TransitionLink/page";
 
 //Componentgs
@@ -15,13 +15,12 @@ export default function Card({ index, data }) {
 
   return (
     <>
-      <TransitionLink className={styles.border} href={"/project/" + slug} color={data.colorBG}>
-        <MouseHover className={styles.container} color={data.colorBG}>
+      <MouseHover className={styles.border} index={index} color={data.colorBG}>
+        <TransitionLink className={styles.container} href={"/project/" + slug} color={data.colorBG}>
           <div className={styles.img}>
             <ImageLoader data={data.imgCard} />
             <div className={styles.imgNumber}>{number.toString().padStart(2, "0")}</div>
           </div>
-
           <div className={styles.info}>
             <div className={styles.number}>{number.toString().padStart(2, "0")}</div>
             <div className={styles.description}>
@@ -36,8 +35,8 @@ export default function Card({ index, data }) {
               </div>
             </div>
           </div>
-        </MouseHover>
-      </TransitionLink>
+        </TransitionLink>
+      </MouseHover>
     </>
   );
 }

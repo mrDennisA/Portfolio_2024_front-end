@@ -39,7 +39,7 @@ export function ThemeToggle({ children, data }) {
 
   useEffect(() => {
     setTheme(() => data);
-  });
+  }, [data]);
 
   return children;
 }
