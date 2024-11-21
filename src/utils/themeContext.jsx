@@ -4,7 +4,7 @@ import { createContext, useContext, useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
 //Util
-import { LenisContext } from "@/utils/lenis";
+import { LenisContext } from "@/utils/lenisContext";
 
 const ThemeContext = createContext();
 

@@ -5,7 +5,7 @@ import React, { useContext } from "react";
 import { useRouter } from "next/navigation";
 
 //Util
-import { LenisContext } from "@/utils/lenis";
+import { LenisContext } from "@/utils/lenisContext";
 
 export const TransitionLink = ({ children, href = "", color, ...props }) => {
   const router = useRouter();

@@ -1,9 +1,9 @@
 .border {
-  border-top: 1px solid var(--borderColor);
+  border-top: var(--border);
 }
 
 .border:last-child {
-  border-bottom: 1px solid var(--borderColor);
+  border-bottom: var(--border);
 }
 
 .container {

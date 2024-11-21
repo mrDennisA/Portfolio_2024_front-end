@@ -1,15 +1,39 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+
+  backdrop-filter: blur(8px);
+  border: solid 1px var(--borderColor);
+  border-radius: 4px;
+
+  transition: border var(--transition);
+}
+
+.container:hover {
+  transition: border var(--transition);
+  border: solid 1px var(--borderColorHover);
+}
+
 .svg {
   height: 2rem;
+  pointer-events: none;
 }
 
 .svg rect,
 .svg path {
   fill: var(--textColorLight);
+  pointer-events: none;
+  mix-blend-mode: difference;
 }
 
 .arrow {
   fill: none;
   stroke: var(--textColorLight);
   stroke-miterlimit: 10;
-  stroke-width: 1.5px;
+  stroke-width: 2px;
+  pointer-events: none;
+  mix-blend-mode: difference;
 }

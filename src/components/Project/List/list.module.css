@@ -9,9 +9,6 @@
   max-width: var(--xl);
 }
 
-.title {
-}
-
 .container {
   display: grid;
 }

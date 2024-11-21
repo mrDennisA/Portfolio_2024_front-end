@@ -21,22 +21,6 @@
   position: absolute;
 
   top: 4px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-
-  border: var(--border);
-  border-radius: var(--radius);
-  backdrop-filter: blur(8px);
-
-  background-color: var(--buttonColor);
-
-  /* Animation */
-  transition-property: border, background-color;
-  transition: var(--transition);
 }
 
 .back {
@@ -58,10 +42,10 @@
   text-shadow: var(--shadow);
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .back:hover,
   .link:hover {
     background-color: var(--buttonColorHover);
     border: var(--borderHover);
   }
-}
+} */

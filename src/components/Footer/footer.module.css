@@ -7,22 +7,3 @@
   /* Layout */
   margin-top: auto;
 }
-
-.container a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-
-  border: var(--border);
-  border-radius: var(--radius);
-
-  /* Animation */
-  transition-property: border, background-color;
-  transition: var(--transition);
-}
-
-.container a:hover {
-  border: var(--borderHover);
-}

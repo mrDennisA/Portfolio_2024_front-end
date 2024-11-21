@@ -1,10 +1,13 @@
 //Components
-import { ThemeToggle } from "@/utils/theme";
+import { ThemeToggle } from "@/utils/themeContext";
 import Banner from "@/components/Banner/page";
 import Introduction from "@/components/Introduction/page";
 import Contact from "@/components/Contact/page";
 import ProjectList from "@/components/Project/List/page";
 import Info from "@/components/Info/page";
+
+// Utils
+import ModalContextProvider from "@/utils/modal";
 
 // API
 import { HOME_URL, PROJECTS_URL } from "@/constants/api";
@@ -42,11 +45,13 @@ export default async function Home() {
   return (
     <>
       <ThemeToggle data={homeData.colorBG}>
-        <Banner data={homeData} type="home" />
-        <Introduction data={homeData.detail} />
-        <Contact data={homeData.contact} />
-        <ProjectList data={projectsData} />
-        <Info data={homeData} />
+        <ModalContextProvider data={projectsData}>
+          <Banner data={homeData} type="home" />
+          <Introduction data={homeData.detail} />
+          <Contact data={homeData.contact} />
+          <ProjectList data={projectsData} />
+          <Info data={homeData} />
+        </ModalContextProvider>
       </ThemeToggle>
     </>
   );

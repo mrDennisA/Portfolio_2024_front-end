@@ -60,13 +60,13 @@
   left: 50%;
   transform: translateX(-50%);
 
-  border: var(--border);
+  border: solid 2px var(--borderColor);
   /* box-shadow: 0 0 0 1px var(--borderColor) inset; */
 }
 
 .link .span {
   position: relative;
-  border: var(--borderHover);
+  border: solid 2px var(--borderColorHover);
   /* box-shadow: 0 0 0 1px var(--borderColorHover) inset; */
 }
 

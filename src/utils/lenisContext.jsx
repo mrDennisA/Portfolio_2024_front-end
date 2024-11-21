@@ -6,7 +6,7 @@ import { useLenis, ReactLenis } from "lenis/react";
 
 export const LenisContext = createContext();
 
-export default function SmoothScrolling({ children }) {
+export default function LenisContextProvider({ children }) {
   const lenis = useLenis();
 
   return (

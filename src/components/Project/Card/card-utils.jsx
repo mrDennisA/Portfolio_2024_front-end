@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 //Componets
-import { colorBG } from "@/utils/theme";
+import { colorBG } from "@/utils/themeContext";
 import { useState } from "react";
 import { ModalToggle } from "@/utils/modal";
 

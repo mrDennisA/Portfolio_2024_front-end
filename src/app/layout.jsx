@@ -1,11 +1,13 @@
 // Component
 import Header from "../components/Header/page";
 import Footer from "@/components/Footer/page";
-import ThemeContextProvider from "@/utils/theme";
 
 //Utils
+import LenisContextProvider from "@/utils/lenisContext";
+import ThemeContextProvider from "@/utils/themeContext";
+
+//Fonts
 import { roboto, robotoCondensed, dmSerifDisplay, graphik } from "@/utils/fonts";
-import SmoothScrolling from "@/utils/lenis";
 
 // Styles
 import "../styles/globals.css";
@@ -18,13 +20,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${dmSerifDisplay.variable} ${graphik.variable}`}>
-      <SmoothScrolling>
+      <LenisContextProvider>
         <ThemeContextProvider>
           <Header />
           <main>{children}</main>
           <Footer />
         </ThemeContextProvider>
-      </SmoothScrolling>
+      </LenisContextProvider>
     </html>
   );
 }

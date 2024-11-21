@@ -1,6 +1,6 @@
 import React from "react";
 
-import { colorBG, time } from "@/utils/theme";
+import { colorBG, time } from "@/utils/themeContext";
 
 export default function Foreground({ color = colorBG, ...props }) {
   return (

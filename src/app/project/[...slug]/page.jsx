@@ -1,5 +1,5 @@
 // Components
-import { ThemeToggle } from "@/utils/theme";
+import { ThemeToggle } from "@/utils/themeContext";
 import Banner from "@/components/Banner/page";
 import Detail from "@/components/Project/Detail/page";
 
