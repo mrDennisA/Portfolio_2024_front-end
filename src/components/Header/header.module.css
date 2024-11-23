@@ -12,40 +12,8 @@
   max-width: var(--xl);
 }
 
-/* .wrapper {
-  width: var(--padding);
-} */
-
-.back,
-.link {
-  position: absolute;
-
-  top: 4px;
-}
-
 .back {
+  position: absolute;
+  top: 4px;
   left: 4px;
 }
-
-.link {
-  right: 4px;
-}
-
-.back svg {
-  filter: drop-shadow(var(--shadow));
-}
-
-.link * {
-  font-family: var(--font-robotoCondensed);
-  font-size: 1.25rem;
-  font-weight: 300;
-  text-shadow: var(--shadow);
-}
-
-/* @media only screen and (min-width: 768px) {
-  .back:hover,
-  .link:hover {
-    background-color: var(--buttonColorHover);
-    border: var(--borderHover);
-  }
-} */

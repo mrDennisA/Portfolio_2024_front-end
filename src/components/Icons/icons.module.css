@@ -6,7 +6,7 @@
   height: 3.25rem;
 
   backdrop-filter: blur(8px);
-  border: solid 1px var(--borderColor);
+  border: solid 2px var(--borderColor);
   border-radius: 4px;
 
   transition: border var(--transition);
@@ -14,11 +14,14 @@
 
 .container:hover {
   transition: border var(--transition);
-  border: solid 1px var(--borderColorHover);
+  border: solid 2px var(--borderColorHover);
 }
 
 .svg {
   height: 2rem;
+
+  filter: drop-shadow(var(--shadow));
+
   pointer-events: none;
 }
 
