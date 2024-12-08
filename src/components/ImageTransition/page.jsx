@@ -40,7 +40,7 @@ export default function ImageTransition({ data, loading, type = "img", ...props 
       alt={alt}
       width={width}
       height={height}
-      quality={85}
+      quality={100}
       loading={loading}
       sizes="(max-width: 1280px)100vw"
       style={(type === "img" && styleImg) || (type === "home" && styleHome) || (type === "project" && styleProject)}

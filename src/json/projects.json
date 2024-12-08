@@ -587,5 +587,62 @@
         ]
       }
     ]
+  },
+  {
+    "id": 9,
+    "color": "#FFFFFF",
+    "colorBG": "#1C343C",
+    "slugTitle": "digitalmagazine",
+    "title": "Digital Magazine",
+    "slugClient": "byraservice",
+    "client": "Byrpservice",
+    "imgCard": {
+      "url": "/img/client/byraservice/digital_magazine/banner_card.jpg",
+      "alt": "imgCard",
+      "width": 540,
+      "height": 540
+    },
+    "imgBanner": [
+      {
+        "url": "/img/client/byraservice/digital_magazine/banner.jpg",
+        "alt": "imgBanner",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "detail": [
+      {
+        "name": "text",
+        "service": ["Case study", "Digital Magazine"],
+        "description": [
+          "Byråservice plans to launch a digital magazine aimed at its clients, targeting large public and private sector organizations. The magazine's primary objectives are to foster connections, reflect the company's personality, and highlight its diverse services and business areas.",
+          "Proposals for a cover design and at least two interior pages to exemplify the magazine's graphic style.  The design should align with the existing visual identity. Content can be derived from the company’s website or supplemented with placeholder images and “lorem ipsum” text to illustrate the proposed design approach."
+        ]
+      },
+      {
+        "name": "img",
+        "type": "list",
+        "img": [
+          {
+            "url": "/img/client/byraservice/digital_magazine/img_01.png",
+            "alt": "img1"
+          }
+        ]
+      },
+      {
+        "name": "img",
+        "type": "list",
+        "img": [
+          {
+            "url": "/img/client/byraservice/digital_magazine/img_02.jpg",
+            "alt": "img2"
+          },
+          {
+            "url": "/img/client/byraservice/digital_magazine/img_03.jpg",
+            "alt": "img3"
+          }
+        ]
+      }
+    ]
   }
 ]
