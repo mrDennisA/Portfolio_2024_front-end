@@ -12,8 +12,11 @@ export default function Footer() {
       <Link href="mailto: dennis.alekseev@gmail.com">
         <Icon.Mail />
       </Link>
-      <Link href="https://www.linkedin.com/in/dennis-alekseev/">
+      <Link href="https://www.linkedin.com/in/dennis-alekseev/" target="_blank">
         <Icon.LinkedIn />
+      </Link>
+      <Link href="https://github.com/mrDennisA" target="_blank">
+        <Icon.Github />
       </Link>
     </footer>
   );

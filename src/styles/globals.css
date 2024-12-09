@@ -63,8 +63,6 @@ body {
 
   color: var(--textColorLight);
   background-color: var(--bgColorDark);
-
-  /* cursor: none; */
 }
 
 main {
@@ -108,10 +106,10 @@ html.lenis body {
   box-shadow: 0px 0px 0px 1px hsla(180, 100%, 20%, 0.5) inset;
 } */
 
-/* Your primary input mechanism is a finger*/
+/* Your primary input mechanism is a finger */
 @media (pointer: coarse) {
 }
 
-/* Your primary input mechanism is a mouse*/
+/* Your primary input mechanism is a mouse */
 @media (pointer: fine) {
 }

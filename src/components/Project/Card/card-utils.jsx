@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 //Componets
 import { colorBG } from "@/utils/themeContext";
 import { useState } from "react";
-import { ModalToggle } from "@/utils/modal";
+import { ModalToggle } from "@/utils/modalContext";
 
 export function MouseHover({ children, index, color, ...props }) {
   const [toggle, setToggle] = useState({ active: false, index: 0 });

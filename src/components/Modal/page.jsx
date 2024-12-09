@@ -1,12 +1,11 @@
 import Image from "next/image";
-import { useEffect } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
 
 // Utils
 import useMouse from "@/utils/useMouse";
 
+//Styles
 import styles from "./modal.module.css";
-import { lazy } from "react";
 
 export function Modal({ modal, projects }) {
   const { active, index } = modal;

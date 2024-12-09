@@ -7,7 +7,7 @@ import ProjectList from "@/components/Project/List/page";
 import Info from "@/components/Info/page";
 
 // Utils
-import ModalContextProvider from "@/utils/modal";
+import ModalContextProvider from "@/utils/modalContext";
 
 // API
 import { HOME_URL, PROJECTS_URL } from "@/constants/api";

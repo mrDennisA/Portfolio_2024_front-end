@@ -17,7 +17,6 @@ export default function ScrollHorizontal({ children }) {
   const [childWidth, setChildWidth] = useState(0);
 
   useEffect(() => {
-    // console.log(parentRef.current.firstChild.clientWidth);
     const handleResize = () => {
       setParentWidth(() => parentRef.current.clientWidth - targetRef.current.clientWidth);
       setChildWidth(() => parentRef.current.firstChild.clientWidth);

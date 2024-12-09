@@ -48,12 +48,6 @@ p,
   line-height: clamp(28px, 25.6px + 0.5vw, 32px);
 }
 
-/* .p2 {
-  font-weight: 400;
-  font-size: clamp(16px, 14.8px + 0.25vw, 18px);
-  line-height: clamp(20px, 17.6px + 0.5vw, 24px);
-} */
-
 .quote {
   font-family: var(--font-dmSerifDisplay);
   display: flex;
