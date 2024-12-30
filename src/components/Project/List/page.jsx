@@ -8,7 +8,7 @@ import styles from "./list.module.css";
 export default function ProjectList({ data }) {
   return (
     <section className={styles.section}>
-      <h3 className={styles.title}>Works</h3>
+      <h3 className={styles.title}>Recent Work</h3>
       <div className={styles.container}>
         {data.map((item, index) => {
           return <Card key={index} index={index} data={item} />;
